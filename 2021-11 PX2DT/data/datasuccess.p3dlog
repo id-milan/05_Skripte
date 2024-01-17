@@ -1,0 +1,981 @@
+﻿##~ running Plaxis3DInput.exe 20.4.0.790
+_initializerectangular SoilContour 0 0 12 8
+_setproperties "Title" "Ram 3d sipovi" "Company" "Jaroslav Cerni Water Institute" "Comments" "" "UnitForce" "kN" "UnitLength" "m" "UnitTime" "day" "WaterWeight" 10 "ReferenceTemperature" 293.15 "LiquidSpecificHeatCapacity" 4181.3 "LiquidThermalConductivity" 0.0006 "LiquidLatentHeat" 334000 "LiquidThermalExpansion" 0.00021 "LiquidTemperature" 293.15 "IceSpecificHeatCapacity" 2108 "IceThermalConductivity" 0.00222 "IceThermalExpansion" 5E-5 "VapourSpecificHeatCapacity" 1930 "VapourThermalConductivity" 2.5E-5 "VapourSpecificGasConstant" 461.5 "UseTemperatureDepWaterPropsTable" False "ModelType" "Full" "ElementType" "10-Noded"
+_gotostructures
+_import "structures" "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Ram 3d.dxf" 1 "z" 0 0 0
+_gotosoil
+_gotostructures
+_gotosoil
+_borehole -28 -56
+_soillayer 0
+_set Soillayer_1.Zones[0].Top -13
+_set Soillayer_1.Zones[0].Bottom -60
+##~ running Plaxis3DInput.exe 20.4.0.790
+_gotostructures
+_delete (Surface_7 Surface_6 Surface_5 Surface_4 Surface_3 Surface_2 Surface_1 Line_15 Line_14 Line_13 Line_12 Line_11 Line_10 Line_9 Line_8 Point_30 Point_28 Point_26 Point_24 Point_22 Point_20 Point_18 Point_16)
+_delete (Line_1 Line_2 Point_25 Point_3 Point_1 Point_23 Point_21 Point_19 Point_17 Point_15)
+_gotomesh
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_gotostructures
+_beam Line_4
+_beam Line_5
+_beammat
+_set Line_4.Beam.Material BeamMat_1
+_sps BeamMat_1 "Comments" "" "Metadata" "" "MaterialName" "Beam" "Colour" 16711935 "MaterialNumber" 0 "Elasticity" 0 "CriticalDirection" 0 "BeamType" 1 "PredefinedBeamType" 3 "NormalX" 0 "NormalY" 1 "NormalZ" 0 "NonSoilSpecificHeatCapacity" 0 "ThermalConductivity" 0 "Density" 0 "ThermalExpansion" 0 "Height" 0 "Width" 0 "Diameter" 0 "Thickness" 0 "sigy" 0 "W2" 0 "W3" 0 "Mp2eq" 0 "Mp3eq" 0 "Npeq" 0 "W2eq" 12 "W3eq" 12 "h2eq" 3.46410161513775 "h3eq" 3.46410161513775 "Aeq" 12 "Sigyeq" 0 "A" 1 "w" 1 "E" 1 "Iyy" 1 "Izz" 1 "Iyz" 0 "nu" 0 "RayleighAlpha" 0 "RayleighBeta" 0
+_set Line_5.Beam.Material Beam
+_gotomesh
+_gotosoil
+_gotomesh
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_viewmesh
+_gotostructures
+_decomposesrf Volume_1
+_plate Surface_Volume_1_2
+_platemat
+_set Surface_Volume_1_2.Plate.Material PlateMat3D_1
+_sps PlateMat3D_1 "Comments" "" "Metadata" "" "MaterialName" "1" "Colour" 16711680 "MaterialNumber" 0 "Elasticity" 0 "IsIsotropic" True "PreventPunching" False "NormalX" 0 "NormalY" 0 "NormalZ" 0 "NonSoilSpecificHeatCapacity" 0 "ThermalConductivity" 0 "Density" 0 "ThermalExpansion" 0 "d" 0.1 "w" 1 "E1" 2.99 "E2" 2.99 "Nu12" 0.495 "G12" 1 "G13" 1 "G23" 1 "sigy11" 0 "sigy22" 0 "W11" 0 "W22" 0 "RayleighAlpha" 0 "RayleighBeta" 0 "Mp11eq" 0 "Mp22eq" 0 "Np1eq" 0 "Np2eq" 0 "AxialStiffness1" 0.299 "AxialStiffness2" 0.299 "FlexuralRigidity1" 0.000249166666666667 "FlexuralRigidity2" 0.000249166666666667
+_decomposesrf Volume_2
+_plate Surface_Volume_2_2
+_set Surface_Volume_2_2.Plate.Material PlateMat3D_1
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_undo
+_undo
+_redo
+_redo
+_gotosoil
+_soilmat
+_set Soillayer_1.Soil.Material SoilMat_1
+_sps SoilMat_1 "Comments" "" "Metadata" "" "MaterialName" "Mulj nanos" "Colour" 15262369 "MaterialNumber" 0 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.5 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 428.571428571428 "VolumetricSpecificStorage" 0.0233333333333333 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 10 "Eoed" 10.5590062111801 "Vs" 1.53933921453048 "Vp" 2.39888690544035 "Einc" 0 4.34782608695652 0.15 12 0 0 0 0 0 18 18 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.792088309182241 0.792088309182241 1 0 0 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_set Soillayer_1.Zones[0].Bottom -15
+_soillayer 0
+_soilmat
+_set Soillayer_2.Soil.Material SoilMat_1
+_sps SoilMat_1 "Comments" "" "Metadata" "" "MaterialName" "2" "Colour" 10676870 "MaterialNumber" 0 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.5 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.988142292490119 "KwRefN" 841.750841750841 "VolumetricSpecificStorage" 0.01188 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 20 "Eoed" 21.4970214970215 "Vs" 2.15826774477118 "Vp" 3.42284628867215 "Einc" 0 8.54700854700855 0.17 20 0 0 0 0 0 18 18 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.657979856674331 0.657979856674331 1 0 0 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_set Soillayer_2.Zones[0].Bottom -20
+_soillayer 0
+_soilmat
+_set Soillayer_3.Soil.Material SoilMat_2
+_sps SoilMat_2 "Comments" "" "Metadata" "" "MaterialName" "3" "Colour" 10283244 "MaterialNumber" 0 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.5 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.987161506095587 "KwRefN" 1033.47790729195 "VolumetricSpecificStorage" 0.0096760655737705 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 25 "Eoed" 27.4464624559501 "Vs" 2.32883773233497 "Vp" 3.76444443858635 "Einc" 0 10.5042016806723 0.19 25 0 0 0 0 0 19 19 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.5773817382593 0.5773817382593 1 0 0 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_set Soillayer_3.Zones[0].Bottom -21
+_soillayer 0
+_soilmat
+_set Soillayer_4.Soil.Material SoilMat_3
+_sps SoilMat_3 "Comments" "" "Metadata" "" "MaterialName" "4" "Colour" 12842489 "MaterialNumber" 0 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.5 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.986622073578595 "KwRefN" 1229.16666666667 "VolumetricSpecificStorage" 0.00813559322033899 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 30 "Eoed" 33.3333333333333 "Vs" 0 "Vp" 0 "Einc" 0 12.5 0.2 27 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.546009500260453 0.546009500260453 1 0 0 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_soillayer 0
+_set Soillayer_4.Zones[0].Bottom -22
+_set Soillayer_5.Zones[0].Bottom -23
+_soilmat
+_set Soillayer_5.Soil.Material SoilMat_4
+_sps SoilMat_4 "Comments" "" "Metadata" "" "MaterialName" "5" "Colour" 16377283 "MaterialNumber" 0 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.5 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.986622073578595 "KwRefN" 1229.16666666667 "VolumetricSpecificStorage" 0.00813559322033899 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 30 "Eoed" 33.3333333333333 "Vs" 2.44575291414999 "Vp" 3.99389778439498 "Einc" 0 12.5 0.2 30 0 0 0 0 0 20.5 20.5 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 0 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_soillayer 0
+_set Soillayer_6.Zones[0].Bottom -60
+_soilmat
+_set Soillayer_6.Soil.Material SoilMat_5
+_sps SoilMat_5 "Comments" "" "Metadata" "" "MaterialName" "6" "Colour" 12695266 "MaterialNumber" 0 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.5 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.986622073578595 "KwRefN" 1434.02777777778 "VolumetricSpecificStorage" 0.00697336561743342 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 35 "Eoed" 38.8888888888889 "Vs" 2.61007662722764 "Vp" 4.26223728418147 "Einc" 0 14.5833333333333 0.2 35 10 0 0 0 0 21 21 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.426423563648954 0.426423563648954 1 0 0 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_move Borehole_1 -22 0
+_move Borehole_1 50 0
+_move Borehole_1 0 56
+_movepoint SoilContour 0 -50 0 0.0615237430941217
+_movepoint SoilContour 0 -50 -50 0.0615237430941217
+_movepoint SoilContour 1 12 50 0.0615237430941217
+_movepoint SoilContour 1 12 -50 0.0615237430941217
+_movepoint SoilContour 1 50 -50 0.0615237430941217
+_movepoint SoilContour 2 50 8 0.0615237430941217
+_movepoint SoilContour 2 50 50 0.0615237430941217
+_movepoint SoilContour 3 -50 8 0.0615237430941217
+_movepoint SoilContour 3 -50 50 0.0615237430941217
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_gotostructures
+_beam (Line_7 Line_6)
+_set (Line_7.Beam.Material Line_6.Beam.Material) Beam
+_sps Beam "Comments" "" "Metadata" "" "MaterialName" "Beam" "Colour" 16711935 "MaterialNumber" 0 "Elasticity" 0 "CriticalDirection" 0 "BeamType" 1 "PredefinedBeamType" 3 "NormalX" 0 "NormalY" 1 "NormalZ" 0 "NonSoilSpecificHeatCapacity" 0 "ThermalConductivity" 0 "Density" 0 "ThermalExpansion" 0 "Height" 0 "Width" 0 "Diameter" 0 "Thickness" 0 "sigy" 0 "W2" 0 "W3" 0 "Mp2eq" 0 "Mp3eq" 0 "Npeq" 0 "W2eq" 379.473319220205 "W3eq" 379.473319220205 "h2eq" 10.9544511501033 "h3eq" 10.9544511501033 "Aeq" 120 "Sigyeq" 0 "A" 0.1 "w" 7850 "E" 210000000 "Iyy" 1 "Izz" 1 "Iyz" 0 "nu" 0 "RayleighAlpha" 0 "RayleighBeta" 0
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_delete (Surface_Volume_2_1 Surface_Volume_1_1)
+_soilmat
+_set (Volume_2.Soil.Material Volume_1.Soil.Material) SoilMat_6
+_sps SoilMat_6 "Comments" "" "Metadata" "" "MaterialName" "Beton" "Colour" 12509878 "MaterialNumber" 0 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.5 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.986622073578595 "KwRefN" 1434027777.77778 "VolumetricSpecificStorage" 6.97336561743342E-9 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 35000000 "Eoed" 38888888.8888889 "Vs" 2392.17474278114 "Vp" 3906.40499692492 "Einc" 0 14583333.3333333 0.2 50 100 0 0 0 0 25 25 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.233955556881022 0.233955556881022 1 0 0 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_sps Beton "Comments" "" "Metadata" "" "MaterialName" "Beton" "Colour" 5070665 "MaterialNumber" 0 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.986622073578595 "KwRefN" 1434027777.77777 "VolumetricSpecificStorage" 6.97336561743344E-9 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 34999999.9999999 "Eoed" 38888888.8888888 "Vs" 2392.17474278113 "Vp" 3906.40499692492 "Einc" 0 14583333.3333333 0.2 50 100 0 0 0 0 25 25 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.233955556881022 0.233955556881022 1 0 0 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_sps PlateMat3D_1 "Comments" "" "Metadata" "" "MaterialName" "Cev metalna" "Colour" 16711680 "MaterialNumber" 0 "Elasticity" 0 "IsIsotropic" True "PreventPunching" False "NormalX" 0 "NormalY" 0 "NormalZ" 0 "NonSoilSpecificHeatCapacity" 0 "ThermalConductivity" 0 "Density" 0 "ThermalExpansion" 0 "d" 0.1 "w" 7850 "E1" 210000000 "E2" 210000000 "Nu12" 0.3 "G12" 80769230.7692308 "G13" 80769230.7692308 "G23" 80769230.7692308 "sigy11" 0 "sigy22" 0 "W11" 0 "W22" 0 "RayleighAlpha" 0 "RayleighBeta" 0 "Mp11eq" 0 "Mp22eq" 0 "Np1eq" 0 "Np2eq" 0 "AxialStiffness1" 21000000 "AxialStiffness2" 21000000 "FlexuralRigidity1" 17500 "FlexuralRigidity2" 17500
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_lineload -2 0 0 -2 0 -8
+_set Line_1.LineLoad.qx_start 50
+_set Line_1.LineLoad.qy_start 50
+_set Line_1.LineLoad.qz_start 0
+_set Line_1.LineLoad.qy_start 0
+_set Line_1.LineLoad.qx_start 20
+_set Line_1.LineLoad.Distribution "Linear"
+_set Line_1.LineLoad.qx_end 30
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_gotomesh
+_refine (Surface_Volume_1_2_1 Surface_Volume_2_2_1)
+_refine (Surface_Volume_1_2_1 Surface_Volume_2_2_1)
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_gotowater
+_gotostages
+_activate PhaseHelper (Line_1_1 BoreholeVolume_1_Volume_1_1 Surface_Volume_1_2_2 Surface_Volume_2_2_2 BoreholeVolume_1_Volume_2_1 Line_6_1 Line_7_1 Volume_1_1 Surface_Volume_1_2_1 Surface_Volume_2_2_1 Volume_2_1 Line_4_1 Line_5_1 BoreholeVolume_4_Volume_1_1 Surface_Volume_1_2_5 Surface_Volume_2_2_5 BoreholeVolume_4_Volume_2_1 BoreholeVolume_3_Volume_1_1 Surface_Volume_1_2_4 Surface_Volume_2_2_4 BoreholeVolume_3_Volume_2_1 BoreholeVolume_2_Volume_1_1 Surface_Volume_1_2_3 Surface_Volume_2_2_3 BoreholeVolume_2_Volume_2_1 BoreholeVolume_5_Volume_1_1 Surface_Volume_1_2_6 Surface_Volume_2_2_6 BoreholeVolume_5_Volume_2_1) InitialPhase
+_deactivate LineLoad_1 InitialPhase
+_phase InitialPhase
+_set Model.CurrentPhase Phase_1
+_activate LineLoads Phase_1
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_calculate
+_view Phase_1
+_gotostructures
+_gotosoil
+_gotowater
+_gotosoil
+_set Borehole_1.Head -2
+_gotowater
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_gotosoil
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_gotostructures
+_gotowater
+_gotostages
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d.p3d"
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d v2.p3d"
+_soilmat "Comments" "" "Metadata" "" "MaterialName" "Jak" "Colour" 5501999 "MaterialNumber" 0 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.5 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.983277591973244 "KwRefN" 392000000 "VolumetricSpecificStorage" 2.55102040816327E-8 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 10000000 "Eoed" 12000000 "Vs" 1278.67118525444 "Vp" 2214.72345903501 "Einc" 0 4000000 0.25 45 200 0 0 0 0 24 24 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.292893218813453 0.292893218813453 1 0 0 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_setmaterial BoreholeVolume_1_1 InitialPhase Jak
+_setmaterial BoreholeVolume_2_1 InitialPhase Jak
+_setmaterial BoreholeVolume_2_1 InitialPhase Jak
+_setmaterial BoreholeVolume_4_1 InitialPhase Jak
+_setmaterial BoreholeVolume_3_1 InitialPhase Jak
+_setmaterial BoreholeVolume_6_1 InitialPhase Jak
+_setmaterial BoreholeVolume_5_1 InitialPhase Jak
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d v2.p3d"
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_delete Phase_1
+_phase InitialPhase
+_set Model.CurrentPhase Phase_1
+_activate LineLoads Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d v2.p3d"
+_calculate
+_view Phase_1
+_gotostructures
+_gotosoil
+_gotostructures
+_gotomesh
+_gotowater
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set InitialPhase.ShouldCalculate False
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Soil_1_Soil_3_1.Material InitialPhase Beton
+_set Model.CurrentPhase Phase_1
+_set Soil_1_Soil_3_1.Material Phase_1 Beton
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d v2.p3d"
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d v2.p3d"
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_save "D:\ODB\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\RAM 3d v2.p3d"
+_calculate
+_view InitialPhase
+_gotostructures
+_gotomesh
+##~ running Plaxis3DInput.exe 20.4.0.790
+##~ running Plaxis3DInput.exe 20.4.0.790
+_gotosoil
+_soilmat "Comments" "" "Metadata" "" "MaterialName" "Bearing soil" "Colour" 359910 "MaterialNumber" 3 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" False "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 1285714.28571429 "VolumetricSpecificStorage" 7.77777777777776E-6 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "InterfaceKn" 0 "InterfaceKs" 0 "Eref" 30000.0000000001 "Eoed" 31677.0186335405 "Einc" 0 13043.4782608696 0.15 30 0 0 0 0 0 21 21 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_soilmat "Comments" "" "Metadata" "" "MaterialName" "Clay-like soil" "Colour" 15262369 "MaterialNumber" 1 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 1 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 107142.857142857 "VolumetricSpecificStorage" 9.33333333333334E-5 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "InterfaceKn" 0 "InterfaceKs" 0 "Eref" 2500 "Eoed" 2639.75155279503 "Einc" 0 1086.95652173913 0.15 10 20 0 0 0 0 15 15 0 0 0.9 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9 0 0 0 0 0 0 0 1 0 0.82635182233307 0.82635182233307 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_soilmat "Comments" "" "Metadata" "" "MaterialName" "Rock" "Colour" 1191293 "MaterialNumber" 4 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 1 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.978260869565217 "KwRefN" 375000000 "VolumetricSpecificStorage" 2.66666666666667E-8 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "InterfaceKn" 0 "InterfaceKs" 0 "Eref" 10000000 "Eoed" 13461538.4615385 "Einc" 0 3846153.84615385 0.3 30 0 0 0 0 0 25 25 0 0 0.9 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_soilmat "Comments" "" "Metadata" "" "MaterialName" "Sandy soil" "Colour" 10676870 "MaterialNumber" 2 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 1 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 214285.714285714 "VolumetricSpecificStorage" 4.66666666666667E-5 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "InterfaceKn" 0 "InterfaceKs" 0 "Eref" 5000 "Eoed" 5279.50310559006 "Einc" 0 2173.91304347826 0.15 30 0 0 0 0 0 21 21 0 0 0.9 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_set Soillayer_1.Zones[0].Bottom -16
+_set Soillayer_2.Zones[0].Bottom -18
+_set Soillayer_3.Zones[0].Bottom -38
+_set Soillayer_5.Zones[0].Bottom -45
+_delete SoilModel Soillayer_6
+_set Soillayer_5.Zones[0].Bottom -60
+_set Soillayer_4.Zones[0].Bottom -40
+_delete SoilModel Soillayer_5
+_set Soillayer_4.Zones[0].Bottom -45
+_set Borehole_1.Head -1
+_setmaterial Soillayer_3 BearingSoil
+_setmaterial Soillayer_1 ClaylikeSoil
+_setmaterial Soillayer_2 SandySoil
+_setmaterial Soillayer_4 Rock
+_gotostructures
+_gotosoil
+_sps Beton "Comments" "" "Metadata" "" "MaterialName" "Beton" "Colour" 5070665 "MaterialNumber" 7 "SoilModel" 1 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.986622073578595 "KwRefN" 1229166666.66667 "VolumetricSpecificStorage" 8.13559322033899E-9 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 30000000 "Eoed" 33333333.3333333 "Einc" 0 12500000 0.2 50 100 0 0 0 0 24 24 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_sps CevMetalna "Comments" "" "Metadata" "" "MaterialName" "Cev metalna" "Colour" 16711680 "MaterialNumber" 1 "Elasticity" 0 "IsIsotropic" True "PreventPunching" False "NormalX" 0 "NormalY" 0 "NormalZ" 0 "NonSoilSpecificHeatCapacity" 0 "ThermalConductivity" 0 "Density" 0 "ThermalExpansion" 0 "d" 0.015 "w" 78.5 "E1" 210000000 "E2" 210000000 "Nu12" 0.3 "G12" 80769230.7692308 "G13" 80769230.7692308 "G23" 80769230.7692308 "sigy11" 0 "sigy22" 0 "W11" 0 "W22" 0 "RayleighAlpha" 0 "RayleighBeta" 0 "Mp11eq" 0 "Mp22eq" 0 "Np1eq" 0 "Np2eq" 0 "AxialStiffness1" 3150000 "AxialStiffness2" 3150000 "FlexuralRigidity1" 59.0625 "FlexuralRigidity2" 59.0625
+_sps Beam "Comments" "" "Metadata" "" "MaterialName" "Beam" "Colour" 16711935 "MaterialNumber" 1 "Elasticity" 0 "CriticalDirection" 0 "BeamType" 1 "PredefinedBeamType" 3 "NormalX" 0 "NormalY" 1 "NormalZ" 0 "NonSoilSpecificHeatCapacity" 0 "ThermalConductivity" 0 "Density" 0 "ThermalExpansion" 0 "Height" 0 "Width" 0 "Diameter" 0 "Thickness" 0 "sigy" 0 "W2" 0 "W3" 0 "Mp2eq" 0 "Mp3eq" 0 "Npeq" 0 "W2eq" 0.00775478912741591 "W3eq" 0.00457730605144063 "h2eq" 0.210739936307091 "h3eq" 0.357031788659228 "Aeq" 0.0752408564016526 "Sigyeq" 0 "A" 0.0106 "w" 78.5 "E" 210000000 "Iyy" 3.923E-5 "Izz" 0.0001126 "Iyz" 0 "nu" 0 "RayleighAlpha" 0 "RayleighBeta" 0
+_gotostructures
+_delete UserFeatureHelper Line_1.LineLoad
+_gotosoil
+_gotostructures
+_save "K:\OneDrive - Institut Jaroslav Cerni\210810_Naper_Donji Milanovac\211109_3D model\211109_3D.p3d"
+_undo
+_undo
+_redo
+_gotosoil
+_set Point_29.z -45
+_gotomesh
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+##~ running Plaxis3DInput.exe 20.4.0.790
+_gotostructures
+_delete (Surface_Volume_2_2)
+_delete (Volume_2)
+_delete (Line_5)
+_delete (Line_4)
+_delete (Surface_Volume_1_2)
+_delete (Volume_1)
+_delete (Line_3)
+_delete (Line_6)
+_delete (Line_7)
+_import "structures" "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Model 3D.dxf" 1 "z" 0 0 0
+_intersect (Volume_1 Volume_2)
+_undo
+_undo
+_import "structures" "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Model 3D.dxf" 1 "z" 0 0 0
+_decomposesrf (Volume_1 Volume_2)
+_delete (Surface_Volume_2_1)
+_delete (Surface_Volume_1_1)
+_delete (Surface_Volume_1_4)
+_delete (Surface_Volume_2_4)
+_delete (Line_3)
+_delete (Line_2)
+_delete (Line_5)
+_delete (Line_4)
+_undo
+_undo
+_undo
+_undo
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m\H28m.p3d"
+_gotomesh
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_gotosoil
+_gotostructures
+_set (Volume_2.Soil.Material Volume_1.Soil.Material) Beton
+_plate (Surface_Volume_1_2 Surface_Volume_2_2)
+_set (Surface_Volume_1_2.Plate.Material Surface_Volume_2_2.Plate.Material) CevMetalna
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m\H28m.p3d"
+_beam (Line_3 Line_5 Line_2 Line_4)
+_set (Line_3.Beam.Material Line_5.Beam.Material Line_2.Beam.Material Line_4.Beam.Material) Beam
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m\H28m.p3d"
+_pointload -2 0 0
+_undo
+_pointload -4.8 0 -4
+_set Point_23.x -2.4
+_pointload -2.4 0 -1
+_set Point_24.PointLoad.Fz 0
+_set Point_24.PointLoad.Fx 50
+_set Point_23.PointLoad.Fz 0
+_set Point_23.PointLoad.Fx 59
+_delete UserFeatureHelper Line_1.LineLoad
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m\H28m.p3d"
+_gotomesh
+_set (Line_5_1.CoarsenessFactor Line_4_1.CoarsenessFactor Line_3_1.CoarsenessFactor Line_2_1.CoarsenessFactor Surface_Volume_1_2_1.CoarsenessFactor Surface_Volume_2_2_1.CoarsenessFactor) 0.25
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m\H28m.p3d"
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m\H28m.p3d"
+_gotowater
+_gotostages
+_activate PhaseHelper (BoreholeVolume_2_Volume_1_1 Surface_Volume_1_2_3 BoreholeVolume_1_Volume_1_1 Surface_Volume_1_2_2 Volume_1_1 Surface_Volume_1_2_1 Point_23_1 Point_24_1 BoreholeVolume_2_Volume_2_1 Surface_Volume_2_2_3 BoreholeVolume_1_Volume_2_1 Surface_Volume_2_2_2 Line_5_1 Line_4_1 Volume_2_1 Surface_Volume_2_2_1 Line_3_1 Line_2_1 BoreholeVolume_3_Volume_2_1 Surface_Volume_2_2_4 BoreholeVolume_3_Volume_1_1 Surface_Volume_1_2_4 BoreholeVolume_3_Volume_2_2 Surface_Volume_2_2_5 BoreholeVolume_3_Volume_1_2 Surface_Volume_1_2_5 BoreholeVolume_3_1 BoreholeVolume_2_1 BoreholeVolume_1_1 BoreholeVolume_4_1) InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_deactivate PhaseHelper (BoreholeVolume_3_Volume_1_2 Surface_Volume_1_2_5 BoreholeVolume_3_Volume_1_1 Surface_Volume_1_2_4 BoreholeVolume_2_Volume_1_1 Surface_Volume_1_2_3 BoreholeVolume_1_Volume_1_1 Surface_Volume_1_2_2 Volume_1_1 Surface_Volume_1_2_1 Point_23_1 Point_24_1 BoreholeVolume_3_Volume_2_2 Surface_Volume_2_2_5 BoreholeVolume_3_Volume_2_1 Surface_Volume_2_2_4 BoreholeVolume_2_Volume_2_1 Surface_Volume_2_2_3 BoreholeVolume_1_Volume_2_1 Surface_Volume_2_2_2 Line_5_1 Line_4_1 Volume_2_1 Surface_Volume_2_2_1 Line_3_1 Line_2_1 BoreholeVolume_4_1 BoreholeVolume_3_1 BoreholeVolume_2_1 BoreholeVolume_1_1) InitialPhase
+_activate PhaseHelper (BoreholeVolume_4_1 BoreholeVolume_3_1 BoreholeVolume_2_1 BoreholeVolume_1_1) InitialPhase
+_undo
+_activate Soils InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_phase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_deactivate PointLoads Phase_1
+_set Model.CurrentPhase Phase_2
+_deactivate PointLoad_2 Phase_2
+_phase Phase_2
+_set Model.CurrentPhase Phase_3
+_activate PointLoad_2 Phase_3
+_deactivate PointLoad_1 Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_activate PointLoad_1 Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_phase Phase_3
+_set Model.CurrentPhase Phase_4
+_deactivate PointLoad_2 Phase_4
+_set PointLoad_1_1.Fx Phase_4 -106
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m\H28m.p3d"
+_calculate
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase InitialPhase
+_preview InitialPhase
+_preview InitialPhase
+_set Model.CurrentPhase Phase_1
+_preview Phase_1
+_set Model.CurrentPhase Phase_4
+_set Phase_4.ShouldCalculate True
+_set Model.CurrentPhase Phase_3
+_set Phase_3.ShouldCalculate True
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.DeformCalcType "Gravity loading"
+_set Model.CurrentPhase Phase_4
+_set Phase_4.PreviousPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Phase_3.PreviousPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m bez interface-a\H28m.p3d"
+_set Model.CurrentPhase InitialPhase
+gotomesh
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_gotostages
+_calculate
+_view InitialPhase
+_gotostructures
+_gotosoil
+_gotostructures
+_gotostages
+_set Soil_6_1.Material InitialPhase Rock
+_set Soil_5_1.Material InitialPhase BearingSoil
+_set Soil_4_1.Material InitialPhase SandySoil
+_set Soil_3_1.Material InitialPhase ClaylikeSoil
+_set Model.CurrentPhase Phase_1
+_setmaterial BoreholeVolume_1_1 Phase_1 ClaylikeSoil
+_setmaterial BoreholeVolume_2_1 Phase_1 SandySoil
+_setmaterial BoreholeVolume_3_1 Phase_1 BearingSoil
+_setmaterial BoreholeVolume_4_1 Phase_1 Rock
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_setmaterial BoreholeVolume_1_1 Phase_2 ClaylikeSoil
+_setmaterial BoreholeVolume_3_1 Phase_2 BearingSoil
+_setmaterial BoreholeVolume_2_1 Phase_2 SandySoil
+_setmaterial BoreholeVolume_4_1 Phase_2 Rock
+_set Model.CurrentPhase Phase_4
+_setmaterial BoreholeVolume_3_1 Phase_4 BearingSoil
+_setmaterial BoreholeVolume_4_1 Phase_4 Rock
+_setmaterial BoreholeVolume_1_1 Phase_4 ClaylikeSoil
+_setmaterial BoreholeVolume_2_1 Phase_4 SandySoil
+_set Model.CurrentPhase Phase_3
+_setmaterial BoreholeVolume_3_1 Phase_3 BearingSoil
+_setmaterial BoreholeVolume_1_1 Phase_3 ClaylikeSoil
+_setmaterial BoreholeVolume_4_1 Phase_3 Rock
+_setmaterial BoreholeVolume_2_1 Phase_3 SandySoil
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m bez interface-a\H28m.p3d"
+_set Phase_3.ShouldCalculate True
+_set Model.CurrentPhase Phase_4
+_set Phase_4.ShouldCalculate True
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m bez interface-a\H28m.p3d"
+_calculate
+_view InitialPhase
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m bez interface-a\H28m Bearing E=10MPa.p3d"
+_sps BearingSoil "Comments" "" "Metadata" "" "MaterialName" "Bearing soil" "Colour" 359910 "MaterialNumber" 9 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" False "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 428571.428571428 "VolumetricSpecificStorage" 2.33333333333334E-5 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 10000 "Eoed" 10559.0062111801 "Vs" 45.0672375525849 "Vp" 70.2322171804355 "Einc" 0 4347.82608695652 0.15 30 0 0 0 0 0 21 21 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m bez interface-a\H28m Bearing E=10MPa.p3d"
+_set InitialPhase.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_set Model.CurrentPhase Phase_4
+_set Phase_4.ShouldCalculate True
+_set Model.CurrentPhase Phase_3
+_set Phase_3.ShouldCalculate True
+_calculate
+_view Phase_3
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m sa interfaceom\H28m Bearing E=10MPa.p3d"
+_gotostructures
+_posinterface (Surface_Volume_1_2 Surface_Volume_2_2)
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_activate PositiveInterface_1_1 Phase_1
+_deactivate PositiveInterface_1_1 Phase_1
+_activate PositiveInterface_1_2 Phase_1
+_activate PositiveInterface_1_3 Phase_1
+_activate PositiveInterface_1_4 Phase_1
+_activate PositiveInterface_1_5 Phase_1
+_activate PositiveInterface_2_2 Phase_1
+_activate PositiveInterface_2_3 Phase_1
+_activate PositiveInterface_2_4 Phase_1
+_activate PositiveInterface_2_5 Phase_1
+_set Model.CurrentPhase Phase_2
+_activate PositiveInterface_2_2 Phase_2
+_activate PositiveInterface_1_2 Phase_2
+_activate PositiveInterface_1_3 Phase_2
+_activate PositiveInterface_1_4 Phase_2
+_activate PositiveInterface_1_5 Phase_2
+_activate PositiveInterface_2_3 Phase_2
+_activate PositiveInterface_2_4 Phase_2
+_activate PositiveInterface_2_5 Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_setmaterial BoreholeVolume_1_Volume_2_1 InitialPhase ClaylikeSoil
+_setmaterial BoreholeVolume_1_Volume_1_1 InitialPhase ClaylikeSoil
+_setmaterial BoreholeVolume_2_Volume_2_1 InitialPhase SandySoil
+_setmaterial BoreholeVolume_2_Volume_1_1 InitialPhase SandySoil
+_setmaterial BoreholeVolume_3_Volume_2_2 InitialPhase Rock
+_setmaterial BoreholeVolume_3_Volume_1_2 InitialPhase Rock
+_setmaterial BoreholeVolume_3_Volume_2_1 InitialPhase BearingSoil
+_setmaterial BoreholeVolume_3_Volume_1_1 InitialPhase BearingSoil
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_1
+_setmaterial BoreholeVolume_1_Volume_2_1 Phase_1 ClaylikeSoil
+_setmaterial BoreholeVolume_1_Volume_1_1 Phase_1 ClaylikeSoil
+_setmaterial BoreholeVolume_3_Volume_2_2 Phase_1 Rock
+_setmaterial BoreholeVolume_3_Volume_1_2 Phase_1 Rock
+_setmaterial BoreholeVolume_3_Volume_2_1 Phase_1 BearingSoil
+_setmaterial BoreholeVolume_3_Volume_1_1 Phase_1 BearingSoil
+_setmaterial BoreholeVolume_2_Volume_2_1 Phase_1 SandySoil
+_setmaterial BoreholeVolume_2_Volume_1_1 Phase_1 SandySoil
+_set Model.CurrentPhase Phase_2
+_setmaterial BoreholeVolume_3_Volume_2_2 Phase_2 Rock
+_setmaterial BoreholeVolume_3_Volume_1_2 Phase_2 Rock
+_setmaterial BoreholeVolume_1_Volume_2_1 Phase_2 ClaylikeSoil
+_setmaterial BoreholeVolume_1_Volume_1_1 Phase_2 ClaylikeSoil
+_setmaterial BoreholeVolume_3_Volume_2_1 Phase_2 BearingSoil
+_setmaterial BoreholeVolume_3_Volume_1_1 Phase_2 BearingSoil
+_delete Jak
+_delete SoilMat_1
+_delete SoilMat_2
+_delete SoilMat_3
+_delete SoilMat_4
+_delete SoilMat_5
+_delete MuljNanos
+_setmaterial BoreholeVolume_2_Volume_2_1 Phase_2 SandySoil
+_setmaterial BoreholeVolume_2_Volume_1_1 Phase_2 SandySoil
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_1
+_setmaterial Surface_Volume_2_2_3 Phase_1 Beton
+_set (Soil_1_Soil_3_1.Material Soil_2_Soil_4_1.Material Soil_1_Soil_4_1.Material Soil_2_Soil_3_1.Material Soil_2_Soil_5_1.Material Soil_1_Soil_5_1.Material Soil_2_Soil_5_2.Material Soil_1_Soil_5_2.Material) Phase_1 Beton
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m sa interfaceom\H28m Bearing E=10MPa.p3d"
+_set Model.CurrentPhase Phase_2
+_set (Soil_1_Soil_3_1.Material Soil_1_Soil_4_1.Material Soil_2_Soil_4_1.Material Soil_2_Soil_3_1.Material Soil_2_Soil_5_1.Material Soil_1_Soil_5_1.Material Soil_2_Soil_5_2.Material Soil_1_Soil_5_2.Material) Phase_2 Beton
+_set Model.CurrentPhase Phase_4
+_set (Soil_1_Soil_3_1.Material Soil_1_Soil_4_1.Material Soil_2_Soil_4_1.Material Soil_2_Soil_3_1.Material Soil_2_Soil_5_1.Material Soil_1_Soil_5_1.Material Soil_2_Soil_5_2.Material Soil_1_Soil_5_2.Material) Phase_4 Beton
+_set Model.CurrentPhase Phase_3
+_set (Soil_1_Soil_3_1.Material Soil_1_Soil_4_1.Material Soil_1_Soil_5_1.Material Soil_2_Soil_5_1.Material Soil_2_Soil_4_1.Material Soil_2_Soil_3_1.Material Soil_2_Soil_5_2.Material Soil_1_Soil_5_2.Material) Phase_3 Beton
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set PositiveInterface_2_3.MaterialMode Phase_1 "From adjacent soil"
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m sa interfaceom\H28m Bearing E=10MPa.p3d"
+gotomesh
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_calculate
+_view Phase_3
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m sa interfaceom\H28m Bearing E=30MPa.p3d"
+_gotostructures
+_gotostages
+_sps BearingSoil "Comments" "" "Metadata" "" "MaterialName" "Bearing soil" "Colour" 359910 "MaterialNumber" 9 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" False "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 1285714.28571428 "VolumetricSpecificStorage" 7.77777777777778E-6 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 30000 "Eoed" 31677.0186335404 "Vs" 78.0587451978531 "Vp" 121.645768484726 "Einc" 0 13043.4782608696 0.15 30 0 0 0 0 0 21 21 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_save "C:\Users\ndivac\OneDrive - Institut Jaroslav Cerni\POSLOVI\Donji milanovac odbrana od vetra\Plaxis modeli\Plaxis model\H28m sa interfaceom\H28m Bearing E=30MPa.p3d"
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_set Model.CurrentPhase Phase_4
+_set Phase_4.ShouldCalculate True
+_set Model.CurrentPhase Phase_3
+_set Phase_3.ShouldCalculate True
+_calculate
+##~ running Plaxis3DInput.exe 20.4.0.790
+_view Phase_3
+_set Model.CurrentPhase InitialPhase
+_deactivate (Soil_1_1) InitialPhase
+_deactivate (Soil_2_1) InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_set Model.CurrentPhase Phase_4
+_set Phase_4.ShouldCalculate True
+_set Model.CurrentPhase Phase_3
+_set Phase_3.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase InitialPhase
+_save "C:\ODB\Institut Jaroslav Cerni\Plaxis - General\Donji milanovac platforma\3D\H28m sa interfaceom\H28m Bearing E=30MPa.p3d"
+_calculate
+_view InitialPhase
+##~ running Plaxis3DInput.exe 20.4.0.790
+_save "K:\OneDrive - Institut Jaroslav Cerni\210810_Naper_Donji Milanovac\211110_3D usvajanje modela\H28m Bearing E=30MPa sa gredom.p3d"
+_gotosoil
+_gotostructures
+_line -2 0 0 2 0 0
+_set Point_25.x -1.6
+_set Point_26.x 1.6
+_beammat "Comments" "" "Metadata" "" "MaterialName" "Ploča" "Colour" 15592716 "MaterialNumber" 0 "Elasticity" 0 "CriticalDirection" 0 "BeamType" 1 "PredefinedBeamType" 3 "NormalX" 0 "NormalY" 1 "NormalZ" 0 "NonSoilSpecificHeatCapacity" 0 "ThermalConductivity" 0 "Density" 0 "ThermalExpansion" 0 "Height" 0 "Width" 0 "Diameter" 0 "Thickness" 0 "sigy" 0 "W2" 0 "W3" 0 "Mp2eq" 0 "Mp3eq" 0 "Npeq" 0 "W2eq" 0.0721687774133201 "W3eq" 0.144337543741516 "h2eq" 0.999999919999997 "h3eq" 0.4999999984 "Aeq" 0.499999958399999 "Sigyeq" 0 "A" 0.5 "w" 25 "E" 30000000 "Iyy" 0.04166666 "Izz" 0.0104166666 "Iyz" 0 "nu" 0 "RayleighAlpha" 0 "RayleighBeta" 0
+_beam Line_6
+_set Line_6.Beam.Material Ploča
+_gotosoil
+_gotostages
+_gotosoil
+_gotostructures
+_gotostages
+_gotosoil
+_gotostructures
+_sps Ploča "Comments" "" "Metadata" "" "MaterialName" "Ploča" "Colour" 2354444 "MaterialNumber" 0 "Elasticity" 0 "CriticalDirection" 0 "BeamType" 1 "PredefinedBeamType" 3 "NormalX" 0 "NormalY" 1 "NormalZ" 0 "NonSoilSpecificHeatCapacity" 0 "ThermalConductivity" 0 "Density" 0 "ThermalExpansion" 0 "Height" 0 "Width" 0 "Diameter" 0 "Thickness" 0 "sigy" 0 "W2" 0 "W3" 0 "Mp2eq" 0 "Mp3eq" 0 "Npeq" 0 "W2eq" 0.0721687774133201 "W3eq" 0.144337543741516 "h2eq" 0.999999919999997 "h3eq" 0.4999999984 "Aeq" 0.499999958399999 "Sigyeq" 0 "A" 0.5 "w" 25 "E" 30000000 "Iyy" 0.04166666 "Izz" 0.0104166666 "Iyz" 0 "nu" 0 "RayleighAlpha" 0 "RayleighBeta" 0
+_gotomesh
+_gotowater
+_gotostages
+_set Model.CurrentPhase Phase_1
+_activate Beam_5 Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_3
+gotomesh
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_viewmesh
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_calculate
+##~ running Plaxis3DInput.exe 20.4.0.790
+_set Model.CurrentPhase Phase_1
+_gotostructures
+_gotostages
+_sps Beton "Comments" "" "Metadata" "" "MaterialName" "Beton" "Colour" 5070665 "MaterialNumber" 1 "SoilModel" 1 "UserDefinedIndex" 0 "DrainageType" 4 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 30000000 "Eoed" 33333333.3333333 "Einc" 0 12500000 0.2 50 100 0 0 0 0 24 24 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_sps BearingSoil "Comments" "" "Metadata" "" "MaterialName" "Noseći sloj" "Colour" 359910 "MaterialNumber" 2 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" False "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 1285714.28571429 "VolumetricSpecificStorage" 7.77777777777776E-6 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 30000.0000000001 "Eoed" 31677.0186335405 "Einc" 0 13043.4782608696 0.15 30 0 0 0 0 0 21 21 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_sps ClaylikeSoil "Comments" "" "Metadata" "" "MaterialName" "Glinovito tlo" "Colour" 15262369 "MaterialNumber" 3 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 1 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 107142.857142857 "VolumetricSpecificStorage" 9.33333333333334E-5 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 2500 "Eoed" 2639.75155279503 "Einc" 0 1086.95652173913 0.15 10 20 0 0 0 0 15 15 0 0 0.9 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9 0 0 0 0 0 0 0 1 0 0.82635182233307 0.82635182233307 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_sps SandySoil "Comments" "" "Metadata" "" "MaterialName" "Peskovito tlo" "Colour" 10676870 "MaterialNumber" 5 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 1 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 214285.714285714 "VolumetricSpecificStorage" 4.66666666666667E-5 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 5000 "Eoed" 5279.50310559006 "Einc" 0 2173.91304347826 0.15 30 0 0 0 0 0 21 21 0 0 0.9 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_sps PeskovitoTlo "Comments" "" "Metadata" "" "MaterialName" "Peskoviti sloj" "Colour" 10676870 "MaterialNumber" 5 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 1 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 214285.714285714 "VolumetricSpecificStorage" 4.66666666666667E-5 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 5000 "Eoed" 5279.50310559006 "Einc" 0 2173.91304347826 0.15 30 0 0 0 0 0 21 21 0 0 0.9 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_sps GlinovitoTlo "Comments" "" "Metadata" "" "MaterialName" "Glinoviti sloj" "Colour" 15262369 "MaterialNumber" 3 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 1 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 107142.857142857 "VolumetricSpecificStorage" 9.33333333333334E-5 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 2500 "Eoed" 2639.75155279503 "Einc" 0 1086.95652173913 0.15 10 20 0 0 0 0 15 15 0 0 0.9 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9 0 0 0 0 0 0 0 1 0 0.82635182233307 0.82635182233307 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_sps Rock "Comments" "" "Metadata" "" "MaterialName" "Stena" "Colour" 1191293 "MaterialNumber" 4 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 1 "InterfaceStiffness" 0 "ConsiderGapClosure" True "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.978260869565217 "KwRefN" 375000000 "VolumetricSpecificStorage" 2.66666666666667E-8 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 10000000 "Eoed" 13461538.4615385 "Einc" 0 3846153.84615385 0.3 30 0 0 0 0 0 25 25 0 0 0.9 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_sps CevMetalna "Comments" "" "Metadata" "" "MaterialName" "Čelična cev" "Colour" 16711680 "MaterialNumber" 1 "Elasticity" 0 "IsIsotropic" True "PreventPunching" False "NormalX" 0 "NormalY" 0 "NormalZ" 0 "NonSoilSpecificHeatCapacity" 0 "ThermalConductivity" 0 "Density" 0 "ThermalExpansion" 0 "d" 0.015 "w" 78.5 "E1" 210000000 "E2" 210000000 "Nu12" 0.3 "G12" 80769230.7692308 "G13" 80769230.7692308 "G23" 80769230.7692308 "sigy11" 0 "sigy22" 0 "W11" 0 "W22" 0 "RayleighAlpha" 0 "RayleighBeta" 0 "Mp11eq" 0 "Mp22eq" 0 "Np1eq" 0 "Np2eq" 0 "AxialStiffness1" 3150000 "AxialStiffness2" 3150000 "FlexuralRigidity1" 59.0625 "FlexuralRigidity2" 59.0625
+_sps Beam "Comments" "" "Metadata" "" "MaterialName" "IPB 240" "Colour" 16711935 "MaterialNumber" 1 "Elasticity" 0 "CriticalDirection" 0 "BeamType" 1 "PredefinedBeamType" 3 "NormalX" 0 "NormalY" 1 "NormalZ" 0 "NonSoilSpecificHeatCapacity" 0 "ThermalConductivity" 0 "Density" 0 "ThermalExpansion" 0 "Height" 0 "Width" 0 "Diameter" 0 "Thickness" 0 "sigy" 0 "W2" 0 "W3" 0 "Mp2eq" 0 "Mp3eq" 0 "Npeq" 0 "W2eq" 0.00775478912741591 "W3eq" 0.00457730605144063 "h2eq" 0.210739936307091 "h3eq" 0.357031788659228 "Aeq" 0.0752408564016526 "Sigyeq" 0 "A" 0.0106 "w" 78.5 "E" 210000000 "Iyy" 3.923E-5 "Izz" 0.0001126 "Iyz" 0 "nu" 0 "RayleighAlpha" 0 "RayleighBeta" 0
+##~ running Plaxis3DInput.exe 20.4.0.790
+_gotostructures
+_delete (Line_1 Point_24 Point_23 Point_3 Point_1 Point_25 Point_20 Point_17 Point_16 Point_14 Point_10 Point_7 Point_21 Point_11 Line_6 Line_5 Line_4 Line_3 Line_2 Point_26 Point_22 Point_19 Point_18 Point_15 Point_13 Point_12 Point_9 Point_8 Point_6 Surface_Volume_2_3 Surface_Volume_1_3 Point_5 Point_4 Point_2 Surface_Volume_2_2 Surface_Volume_1_2 Volume_2 Volume_1)
+_import "structures" "C:\Users\ndivac\Institut Jaroslav Cerni\Plaxis - General\Donji milanovac platforma\Za Vodenu\3D CAD\L23D800.dxf" 1 "z" 0 0 0
+_decomposesrf (Volume_1 Volume_2)
+_delete (Surface_Volume_1_1 Surface_Volume_2_1)
+_delete (Surface_Volume_1_3 Surface_Volume_2_3)
+_plate (Surface_Volume_1_2 Surface_Volume_2_2)
+_set (Surface_Volume_1_2.Plate.Material Surface_Volume_2_2.Plate.Material) ČeličnaCev
+_set (Volume_1.Soil.Material Volume_2.Soil.Material) Beton
+_beam (Line_2 Line_1 Line_4 Line_3)
+_beam Line_5
+_set Line_5.Beam.Material Ploča
+_set (Line_3.Beam.Material Line_4.Beam.Material Line_2.Beam.Material Line_1.Beam.Material) IPB240
+_posinterface (Surface_Volume_1_2 Surface_Volume_2_2)
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase InitialPhase
+_gotomesh
+_gotowater
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_activate Volume_1_1 Phase_1
+_activate Volume_2_1 Phase_1
+_set (Soil_1_Soil_5_1.Material Soil_1_Soil_4_1.Material Soil_1_Soil_3_1.Material Soil_1_1.Material Soil_2_Soil_5_1.Material Soil_2_Soil_4_1.Material Soil_2_Soil_3_1.Material Soil_2_1.Material) Phase_1 Beton
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_delete Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_1
+_delete Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_1
+_delete Phase_4
+_activate (Beam_4_1 Beam_3_1 Beam_1_1 Beam_2_1 Beam_5_1) Phase_1
+_activate Surface_Volume_1_2 Phase_1
+_deactivate Surface_Volume_1_2 Phase_1
+_activate Plates Phase_1
+_activate PositiveInterface_1_1 Phase_1
+_deactivate PositiveInterface_1_1 Phase_1
+_activate PositiveInterface_1_1 Phase_1
+_deactivate PositiveInterface_1_1 Phase_1
+_activate PositiveInterface_1_2 Phase_1
+_activate PositiveInterface_1_3 Phase_1
+_activate PositiveInterface_1_4 Phase_1
+_activate PositiveInterface_2_2 Phase_1
+_activate PositiveInterface_2_3 Phase_1
+_activate PositiveInterface_2_4 Phase_1
+_gotomesh
+_gotostages
+_gotostructures
+_gotostages
+_gotostructures
+_gotostages
+_phase Phase_1
+_set Model.CurrentPhase Phase_2
+##~ running Plaxis3DInput.exe 20.4.0.790
+_gotostructures
+_delete (Point_10 Point_6 Point_3 Point_2 Point_7 Line_5 Line_4 Line_3 Line_2 Line_1 Point_9 Point_8 Point_5 Point_4 Point_1 Surface_Volume_1_2 Volume_1 Surface_Volume_2_2 Volume_2)
+_save "K:\Institut Jaroslav Cerni\Plaxis - General\Donji milanovac platforma\Za Vodenu\Modeli za variranje\L28D800.p3d"
+_import "structures" "K:\Institut Jaroslav Cerni\Plaxis - General\Donji milanovac platforma\Za Vodenu\3D CAD\L28D800.dxf" 1 "z" 0 0 0
+_decomposesrf (Volume_1 Volume_2)
+_delete (Surface_Volume_1_1 Surface_Volume_2_1)
+_delete Geometry (Surface_Volume_2_3 Surface_Volume_1_3)
+_plate (Surface_Volume_2_2 Surface_Volume_1_2)
+_set (Surface_Volume_2_2.Plate.Material Surface_Volume_1_2.Plate.Material) ČeličnaCev
+_posinterface (Surface_Volume_2_2 Surface_Volume_1_2)
+_set (Volume_1.Soil.Material Volume_2.Soil.Material) Beton
+_beam (Line_1 Line_2 Line_3 Line_4)
+_set (Line_1.Beam.Material Line_2.Beam.Material Line_3.Beam.Material Line_4.Beam.Material) IPB240
+_beam Line_5
+_set Line_5.Beam.Material Ploča
+_gotomesh
+_gotowater
+_gotostages
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_delete Phase_2
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_activate Beams Phase_1
+_activate Plates Phase_1
+_activate Interfaces Phase_1
+_deactivate PositiveInterface_1_1 Phase_1
+_deactivate PositiveInterface_2_1 Phase_1
+_set (Soil_1_Soil_5_1.Material Soil_1_Soil_4_1.Material Soil_1_Soil_3_1.Material Soil_1_1.Material) Phase_1 Beton
+_activate Volume_1_1 Phase_1
+_deactivate Volumes Phase_1
+_activate Volumes Phase_1
+_set (Soil_2_Soil_5_1.Material Soil_2_Soil_4_1.Material Soil_2_Soil_3_1.Material Soil_2_1.Material) Phase_1 Beton
+_save "K:\Institut Jaroslav Cerni\Plaxis - General\Donji milanovac platforma\Za Vodenu\Modeli za variranje\L28D800.p3d"
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_save "K:\Institut Jaroslav Cerni\Plaxis - General\Donji milanovac platforma\Za Vodenu\Modeli za variranje\L28D800.p3d"
+_phase Phase_1
+_set Model.CurrentPhase Phase_2
+##~ running Plaxis3DInput.exe 20.4.0.790
+_gotostructures
+_pointload -2 0 0
+_set Point_11.x -1.6
+_set Point_11.PointLoad.Fz 50
+_set Point_11.PointLoad.Fx 50
+_set Point_11.PointLoad.Fz 0
+_set Point_11.PointLoad.Fx -50
+_set Point_11.z -1.5
+_arrayr (Point_11) 12 0 0 -0.5
+_set Point_11.x -2.4
+_set Point_11.PointLoad.Fx 1.7
+_set Point_12.x -4.3
+_undo
+_set Point_12.PointLoad.Fx -4.3
+_set Point_13.PointLoad.Fx -9.6
+_set Point_14.x -9
+_undo
+_set Point_14.PointLoad.Fx -9
+_set Point_15.PointLoad.Fx -32.4
+_set Point_16.PointLoad.Fx -6.9
+_set Point_17.PointLoad.Fx 1.5
+_set Point_17.x -2.4
+_set Point_18.PointLoad.Fx 0.4
+_set Point_18.x -2.4
+_set Point_19.PointLoad.Fx -0.3
+_set Point_20.PointLoad.Fx -0.7
+_set Point_21.PointLoad.Fx 0.4
+_set Point_21.x -2.4
+_set Point_22.PointLoad.Fx -0.8
+_arrayr (Point_11 Point_17 Point_16 Point_15 Point_14 Point_13 Point_12 Point_18 Point_19 Point_20 Point_21 Point_22) 2 4 0 0
+_set Point_23.x 2.4
+_set Point_23.PointLoad.Fx -7.3
+_delete Geometry Point_31
+_set Point_30.PointLoad.Fx -0.3
+_set Point_28.PointLoad.Fx -1.5
+_set Point_26.PointLoad.Fx -2
+_set Point_25.PointLoad.Fx -3.3
+_set Point_24.x 2.4
+_set Point_24.PointLoad.Fx -1.8
+_set Point_32.PointLoad.Fx 0.2
+_set Point_33.PointLoad.Fx 0.2
+_set Point_33.x 1.6
+_set Point_34.PointLoad.Fx -1.6
+_set Point_35.PointLoad.Fx 1.2
+_set Point_36.PointLoad.Fx -2.4
+_gotomesh
+_gotowater
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_activate PointLoads Phase_2
+##~ running Plaxis3DInput.exe 20.4.0.790
+_set PointLoad_1_1.Fx Phase_2 2.2
+_set PointLoad_2_1.Fx Phase_2 -4.8
+_set PointLoad_3_1.Fx Phase_2 -10.1
+_set PointLoad_4_1.Fx Phase_2 -9.5
+_set PointLoad_5_1.Fx Phase_2 -32.9
+_set PointLoad_6_1.Fx Phase_2 -7.4
+_set PointLoad_7_1.Fx Phase_2 2
+_set PointLoad_8_1.Fx Phase_2 0.9
+_set PointLoad_9_1.Fx Phase_2 -0.8
+_set PointLoad_10_1.Fx Phase_2 -1.2
+_set PointLoad_11_1.Fx Phase_2 0.9
+_set PointLoad_12_1.Fx Phase_2 -1.3
+_set PointLoad_13_1.Fx Phase_2 -7.8
+_set PointLoad_18_1.Fx Phase_2 -0.8
+_set PointLoad_17_1.Fx Phase_2 -2
+_set PointLoad_16_1.Fx Phase_2 -2.5
+_set PointLoad_15_1.Fx Phase_2 -3.8
+_set PointLoad_14_1.Fx Phase_2 -2.3
+_set PointLoad_20_1.Fx Phase_2 0.7
+_set PointLoad_21_1.Fx Phase_2 0.7
+_set PointLoad_22_1.Fx Phase_2 -2.1
+_set PointLoad_23_1.Fx Phase_2 1.7
+_set PointLoad_24_1.Fx Phase_2 -2.9
+##~ running Plaxis3DInput.exe 20.4.0.790
+_gotostructures
+_set Point_11.PointLoad.Fx 2.2
+_set Point_12.PointLoad.Fx -4.8
+_set Point_13.PointLoad.Fx -10.1
+_set Point_14.PointLoad.Fx -9.5
+_set Point_15.PointLoad.Fx -32.9
+_set Point_16.PointLoad.Fx -7.4
+_set Point_17.PointLoad.Fx 2
+_set Point_18.PointLoad.Fx 0.9
+_set Point_19.PointLoad.Fx -0.8
+_set Point_20.PointLoad.Fx -1.2
+_set Point_21.PointLoad.Fx 0.9
+_set Point_22.PointLoad.Fx -1.3
+_set Point_23.PointLoad.Fx -7.8
+_set Point_30.PointLoad.Fx -0.8
+_set Point_28.PointLoad.Fx -2
+_set Point_26.PointLoad.Fx -2.5
+_set Point_25.PointLoad.Fx -3.8
+_set Point_24.PointLoad.Fx -2.3
+_set Point_32.PointLoad.Fx 0.7
+_set Point_33.PointLoad.Fx 0.7
+_set Point_34.PointLoad.Fx -2.1
+_set Point_35.PointLoad.Fx 1.7
+_set Point_36.PointLoad.Fx -2.9
+_gotostages
+_set Model.CurrentPhase Phase_1
+_delete Phase_2
+_phase Phase_1
+_set Model.CurrentPhase Phase_2
+_activate PointLoads Phase_2
+##~ running Plaxis3DInput.exe 20.4.0.790
+_save "K:\OneDrive - Institut Jaroslav Cerni\210810_Naper_Donji Milanovac\211115_Usvojeni model\L28D800d5.p3d"
+_gotostructures
+##~ running Plaxis3DInput.exe 20.4.0.790
+_set Point_11.PointLoad.Fx 2.75
+_set Point_12.PointLoad.Fx -6
+_set Point_13.PointLoad.Fx -12.625
+_set Point_14.PointLoad.Fx -11.875
+_gotostages
+_set Model.CurrentPhase Phase_1
+_gotostructures
+_set Point_15.PointLoad.Fx -41.125
+_set Point_16.PointLoad.Fx -9.25
+_set Point_17.PointLoad.Fx 2.5
+_set Point_18.PointLoad.Fx 1.125
+_set Point_19.PointLoad.Fx -1
+_set Point_20.PointLoad.Fx -1.5
+_set Point_21.PointLoad.Fx 1.125
+_set Point_22.PointLoad.Fx -1.625
+_set Point_23.PointLoad.Fx -9.75
+_set Point_30.PointLoad.Fx -1
+_set Point_28.PointLoad.Fx -2.5
+_set Point_26.PointLoad.Fx -3.125
+_set Point_25.PointLoad.Fx -4.75
+_set Point_24.PointLoad.Fx -2.875
+_set Point_32.PointLoad.Fx 0.875
+_set Point_33.PointLoad.Fx 0.875
+_set Point_34.PointLoad.Fx -2.625
+_set Point_35.PointLoad.Fx 2.125
+_set Point_36.PointLoad.Fx -3.625
+_gotomesh
+_gotowater
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_2
+_phase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Phase_3.DeformCalcType "Safety"
+_set Model.CurrentPhase InitialPhase
+gotomesh
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_gotowater
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_calculate
+_view InitialPhase
+_sps NosećiSloj "Comments" "" "Metadata" "" "MaterialName" "Noseći sloj" "Colour" 359910 "MaterialNumber" 2 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" False "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 428571.428571428 "VolumetricSpecificStorage" 2.33333333333334E-5 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 10000 "Eoed" 10559.0062111801 "Einc" 0 4347.82608695652 0.15 20 0 0 0 0 0 21 21 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.657979856674331 0.657979856674331 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_set Model.CurrentPhase Phase_3
+_set Phase_3.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_set Model.CurrentPhase Phase_3
+_set Phase_3.ShouldCalculate False
+_set Phase_3.ShouldCalculate True
+_set Phase_3.ShouldCalculate False
+_set Model.CurrentPhase InitialPhase
+_calculate
+_view InitialPhase
+_sps NosećiSloj "Comments" "" "Metadata" "" "MaterialName" "Noseći sloj" "Colour" 359910 "MaterialNumber" 2 "SoilModel" 2 "UserDefinedIndex" 0 "DrainageType" 0 "DilatancyCutOff" False "UndrainedBehaviour" 0 "InterfaceStrength" 0 "InterfaceStiffness" 0 "ConsiderGapClosure" False "K0PrimaryIsK0Secondary" True "K0Determination" 1 "SolidThermalExpansion" 1 "CrossPermeability" 0 "DefaultValuesAdvanced" True "DataSetFlow" 0 "ModelFlow" 0 "UDModelFlow" 0 "SoilTypeFlow" 0 "LowerUpper" 0 "UsdaSoilType" 0 "StaringUpperSoilType" 0 "StaringLowerSoilType" 0 "M50" 0 "UseDefaultsFlow" 0 "TablePsiPermSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiPerm" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "SplinePsiSat" "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]" "TensionCutOff" True "einit" 0.499999999999999 "emin" 0 "emax" 998.999999999999 "Dinter" 0 "SkemptonB" 0.989010989010989 "KwRefN" 857142.857142857 "VolumetricSpecificStorage" 1.16666666666667E-5 "DrainageConductivity1" 0 "DrainageConductivity2" 0 "Eref" 20000 "Eoed" 21118.0124223603 "Einc" 0 8695.65217391304 0.15 30 0 0 0 0 0 21 21 0 0 1 0 0 0 0 0 0 0.333333333333333 0 0.999 0 0 0 0 1.0000000000000000E+015 0.495 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0.5 0.5 1 0 2 -1.06 -2.37 0 0 10000 1 0.0620347394540943 3.83 1.3774 1.25 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 10 13 77 0 0 0 0 0 0 0
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_delete Phase_3
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Phase_1.Identification "Izgradnja šipova"
+_set Model.CurrentPhase Phase_2
+_set Phase_2.Identification "Udar talasa"
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase InitialPhase
+_gotostructures
+_gotosoil
+_gotostructures
+_gotomesh
+_gotowater
+_gotostages
+_set Model.CurrentPhase Phase_1
+_activate PositiveInterface_1_1 Phase_1
+_deactivate PositiveInterface_1_1 Phase_1
+_activate PositiveInterface_2_1 Phase_1
+_deactivate PositiveInterface_2_1 Phase_1
+_gotostructures
+_gotomesh
+_gotowater
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase InitialPhase
+_view InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2

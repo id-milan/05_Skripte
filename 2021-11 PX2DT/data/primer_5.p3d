@@ -1,0 +1,113 @@
+﻿##~ running Plaxis3DInput.exe 2023.2.0.1059
+_setproperties "Title" "Primer 5" "Company" "Jaroslav Cerni Water Institute" "Comments" "" "UnitForce" "kN" "UnitLength" "m" "UnitTime" "day" "WaterWeight" 10 "ReferenceTemperature" 293.15 "LiquidSpecificHeatCapacity" 4181.3 "LiquidThermalConductivity" 0.0006 "LiquidLatentHeat" 334000 "LiquidThermalExpansion" 0.00021 "LiquidTemperature" 293.15 "IceSpecificHeatCapacity" 2108 "IceThermalConductivity" 0.00222 "IceThermalExpansion" 5E-5 "VapourSpecificHeatCapacity" 1930 "VapourThermalConductivity" 2.5E-5 "VapourSpecificGasConstant" 461.5 "UseTemperatureDepWaterPropsTable" False "ModelType" "Full" "ElementType" "10-Noded"
+_initializerectangular SoilContour 0 0 12 8
+_initializerectangular SoilContour -20 0 0 80
+_setproperties "Title" "Phased excavation of a shield tunnel"
+_borehole 0 0
+_soillayer 0
+_setsoillayerlevel Borehole_1 0 2
+_soillayer 0
+_setsoillayerlevel Borehole_1 2 -12
+_soillayer 0
+_setsoillayerlevel Borehole_1 3 -18
+_soilmat "Identification" "Upper sand" "SoilModel" "Mohr-Coulomb" "Colour" 15262369 "gammaUnsat" 17 "gammaSat" 20 "ERef" 13000 "nu" 0.3 "cRef" 1 "phi" 31 
+_soilmat "Identification" "Clay" "SoilModel" "Mohr-Coulomb" "Colour" 10676870 "gammaUnsat" 16 "gammaSat" 18 "ERef" 10000 "nu" 0.35   "cRef" 5 "phi" 25 
+_soilmat "Identification" "Stiff sand" "SoilModel" "Mohr-Coulomb" "Colour" 10283244 "gammaUnsat" 17 "gammaSat" 20 "ERef" 75000  "nu" 0.3  "cRef" 1 "phi" 31 
+_soilmat "Identification" "Concrete" "SoilModel" "Linear Elastic" "DrainageType" "Non-porous" "Colour" 16377283 "nu" 0.1  "ERef" 31000000 "gammaUnsat" 27 
+_setmaterial Soillayer_1 UpperSand
+_setmaterial Soillayer_2 Clay
+_setmaterial Soillayer_3 StiffSand
+_gotostructures
+_platemat "Identification" "TBM" "MaterialType" "Elastic" "Colour" 16711680 "Gamma" 247 "Isotropic" True "E1" 200000000 "D3d" 0.17  "G12" 100000000
+_tunnel -7 0 0 1 0 0 0 0 1
+_set Tunnel_1.x 0
+_set Tunnel_1.z -13.25
+_set Tunnel_1.CrossSection.ShapeType "Circular"
+_set Tunnel_1.CrossSection.WholeHalfMode "Left"
+_set Tunnel_1.CrossSection.Segments[0].ArcProperties.Radius 4
+_generatethicklining Tunnel_1.CrossSection 0.25
+_plate Tunnel_1.SliceSurfaces[1]
+_set Tunnel_1.SliceSurfaces[1].Plate.Material TBM
+_neginterface Tunnel_1.SliceSurfaces[1]
+_contraction Tunnel_1.SliceSurfaces[1]
+_set Tunnel_1.SliceSurfaces[1].SurfaceContraction.Distribution "Axial increment"
+_set Tunnel_1.SliceSurfaces[1].SurfaceContraction.C 0.5
+_set Tunnel_1.SliceSurfaces[1].SurfaceContraction.C_inc_axial -0.0667
+_surfload Tunnel_1.SliceSurfaces[1]
+_set Tunnel_1.SliceSurfaces[1].SurfaceLoad.Distribution "Perpendicular, vertical increment"
+_set Tunnel_1.SliceSurfaces[1].SurfaceLoad.sign_ref -100
+_set Tunnel_1.SliceSurfaces[1].SurfaceLoad.sign_inc -20
+_set Tunnel_1.SliceSurfaces[1].SurfaceLoad.Zref -4.75
+_surfload (Tunnel_1.PlaneSurfaces[0] Tunnel_1.PlaneSurfaces[1])
+_set (Tunnel_1.PlaneSurfaces[0].SurfaceLoad.Distribution Tunnel_1.PlaneSurfaces[1].SurfaceLoad.Distribution) "Perpendicular, vertical increment"
+_set (Tunnel_1.PlaneSurfaces[0].SurfaceLoad.sign_ref Tunnel_1.PlaneSurfaces[1].SurfaceLoad.sign_ref) -90
+_set (Tunnel_1.PlaneSurfaces[0].SurfaceLoad.sign_inc Tunnel_1.PlaneSurfaces[1].SurfaceLoad.sign_inc) -14
+_set (Tunnel_1.PlaneSurfaces[0].SurfaceLoad.Zref Tunnel_1.PlaneSurfaces[1].SurfaceLoad.Zref) -4.75
+_add Tunnel_1.Trajectory
+_set Tunnel_1.Trajectory.Segments[0].LineProperties.Length 25
+_add Tunnel_1.Trajectory
+_set Tunnel_1.Trajectory.Segments[1].LineProperties.Length 16.5
+_set Tunnel_1.Slicing[1].SlicingMethod "Length"
+_set Tunnel_1.Slicing[1].SliceLength 1.5
+_regeneratetunnelphases Tunnel_1
+_deactivate (TCS_1_Soil_2_1 TCS_1_Soil_1_1) Phase_2
+_set (TCS_1_WaterConditions_2_1.Conditions TCS_1_WaterConditions_1_1.Conditions) Phase_2 "Dry"
+_activate (TCS_1_NegativeInterface_1_1) Phase_2
+_activate (TCS_1_Plate_1_1) Phase_2
+_activate (TCS_1_SurfaceContraction_1_1) Phase_2
+_activate (TCS_2_SurfaceLoad_2_1 TCS_2_SurfaceLoad_1_1) Phase_1
+_set TCS_1_SurfaceContraction_1_1.C Phase_2 0
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_set TCS_1_SurfaceContraction_1_1.C Phase_4 0.1
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_set TCS_1_SurfaceContraction_1_1.C Phase_6 0.2
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_set TCS_1_SurfaceContraction_1_1.C Phase_8 0.3
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_set TCS_1_SurfaceContraction_1_1.C Phase_10 0.4
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_set TCS_1_SurfaceContraction_1_1.Distribution Phase_12 "Uniform"
+_set TCS_1_SurfaceContraction_1_1.C Phase_12 0.5
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_deactivate (TCS_1_NegativeInterface_1_1) Phase_14
+_deactivate (TCS_1_Plate_1_1) Phase_14
+_deactivate (TCS_1_SurfaceContraction_1_1) Phase_14
+_activate (TCS_1_SurfaceLoad_1_1) Phase_14
+_activate (TCS_2_SurfaceLoad_1_1) Phase_15
+_set TCS_2_SurfaceLoad_1_1.Distribution Phase_15 "Perpendicular"
+_set TCS_2_SurfaceLoad_1_1.sign_ref Phase_15 635.4
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_deactivate (TCS_1_SurfaceLoad_1_1) Phase_16
+_activate (TCS_1_NegativeInterface_1_1) Phase_16
+_activate (TCS_1_Soil_2_1) Phase_16
+_set TCS_1_Soil_2_1.Material Phase_16 Concrete
+_deactivate (TCS_2_SurfaceLoad_1_1) Phase_17
+_generatetunnel Tunnel_1
+_gotomesh
+_mesh 0.05 256 True 1.2 0.005 
+_gotostages
+_phase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Phase_1.Identification "Initial position of the TBM"
+_set Tunnel_1_PhasesDefinition_1_TunnelAdvanceInfo_1_1.AdvancementStep Phase_1 7
+_deactivate (Soil_2_Soil_4_1 Soil_3_Soil_4_1) Phase_1
+_activate (Plate_1_2 Plate_1_1) Phase_1
+_activate (SurfaceContraction_1_2 SurfaceContraction_1_1) Phase_1
+_deactivate (SurfaceLoad_14_1 SurfaceLoad_14_2) Phase_1
+_phase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Phase_2.Identification "TBM advancement 1"
+_set Tunnel_1_PhasesDefinition_1_TunnelAdvanceInfo_1_1.AdvancementStep Phase_2 8
+_phase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Phase_3.Identification "TBM advancement 2"
+_advance Tunnel_1 Phase_3
+_phase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Phase_4.Identification "TBM advancement 3"
+_advance Tunnel_1 Phase_4
+_phase Phase_4
+_set Model.CurrentPhase Phase_5
+_set Phase_5.Identification "TBM advancement 4"
+_advance Tunnel_1 Phase_5
+_calculate

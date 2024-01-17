@@ -1,0 +1,384 @@
+C Data about flux contour in a table form     Oznaka - D-4
+C KKONT,NSUR
+    1    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717238   1021499         0         0         0         0         0         0         0  134
+C Data about flux contour in a table form     Oznaka - D-6
+C KKONT,NSUR
+    2    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717248   1021498         0         0         0         0         0         0         0  135
+C Data about flux contour in a table form     Oznaka - D-7
+C KKONT,NSUR
+    3    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717254   1021497         0         0         0         0         0         0         0  136
+C Data about flux contour in a table form     Oznaka - D-9
+C KKONT,NSUR
+    4    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717270   1021496         0         0         0         0         0         0         0  137
+C Data about flux contour in a table form     Oznaka - D-17
+C KKONT,NSUR
+    5    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717278   1021476         0         0         0         0         0         0         0  138
+C Data about flux contour in a table form     Oznaka - D-19
+C KKONT,NSUR
+    6    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717291   1021471         0         0         0         0         0         0         0  139
+C Data about flux contour in a table form     Oznaka - D-20
+C KKONT,NSUR
+    7    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717309   1021468         0         0         0         0         0         0         0  140
+C Data about flux contour in a table form     Oznaka - D-22
+C KKONT,NSUR
+    8    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717329   1021464         0         0         0         0         0         0         0  141
+C Data about flux contour in a table form     Oznaka - D-24
+C KKONT,NSUR
+    9    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717350   1021459         0         0         0         0         0         0         0  142
+C Data about flux contour in a table form     Oznaka - D-11
+C KKONT,NSUR
+   10    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717370   1021494         0         0         0         0         0         0         0  143
+C Data about flux contour in a table form     Oznaka - D-12
+C KKONT,NSUR
+   11    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717381   1021492         0         0         0         0         0         0         0  144
+C Data about flux contour in a table form     Oznaka - D-13
+C KKONT,NSUR
+   12    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717393   1021490         0         0         0         0         0         0         0  145
+C Data about flux contour in a table form     Oznaka - D-14
+C KKONT,NSUR
+   13    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717404   1021487         0         0         0         0         0         0         0  146
+C Data about flux contour in a table form     Oznaka - D-15
+C KKONT,NSUR
+   14    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717418   1021485         0         0         0         0         0         0         0  147
+C Data about flux contour in a table form     Oznaka - B-I
+C KKONT,NSUR
+   15    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717432   1021495         0         0         0         0         0         0         0  148
+C Data about flux contour in a table form     Oznaka - B-II
+C KKONT,NSUR
+   16    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717434   1021493         0         0         0         0         0         0         0  149
+C Data about flux contour in a table form     Oznaka - B-III
+C KKONT,NSUR
+   17    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717436   1021491         0         0         0         0         0         0         0  150
+C Data about flux contour in a table form     Oznaka - B-IV
+C KKONT,NSUR
+   18    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717438   1021489         0         0         0         0         0         0         0  151
+C Data about flux contour in a table form     Oznaka - B-V
+C KKONT,NSUR
+   19    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717440   1021488         0         0         0         0         0         0         0  152
+C Data about flux contour in a table form     Oznaka - B-VI
+C KKONT,NSUR
+   20    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717442   1021486         0         0         0         0         0         0         0  153
+C Data about flux contour in a table form     Oznaka - DB-1
+C KKONT,NSUR
+   21    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717444   1021436         0         0         0         0         0         0         0  154
+C Data about flux contour in a table form     Oznaka - DB-2
+C KKONT,NSUR
+   22    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717453   1021437         0         0         0         0         0         0         0  155
+C Data about flux contour in a table form     Oznaka - DB-3
+C KKONT,NSUR
+   23    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717460   1021438         0         0         0         0         0         0         0  156
+C Data about flux contour in a table form     Oznaka - DB-4
+C KKONT,NSUR
+   24    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717469   1021439         0         0         0         0         0         0         0  157
+C Data about flux contour in a table form     Oznaka - DB-5
+C KKONT,NSUR
+   25    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717478   1021440         0         0         0         0         0         0         0  158
+C Data about flux contour in a table form     Oznaka - DB-6
+C KKONT,NSUR
+   26    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717487   1021441         0         0         0         0         0         0         0  159
+C Data about flux contour in a table form     Oznaka - DA-1
+C KKONT,NSUR
+   27    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717496   1021477         0         0         0         0         0         0         0  160
+C Data about flux contour in a table form     Oznaka - DA-2
+C KKONT,NSUR
+   28    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717509   1021478         0         0         0         0         0         0         0  161
+C Data about flux contour in a table form     Oznaka - DA-3
+C KKONT,NSUR
+   29    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717519   1021479         0         0         0         0         0         0         0  162
+C Data about flux contour in a table form     Oznaka - DA-4
+C KKONT,NSUR
+   30    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717531   1021480         0         0         0         0         0         0         0  163
+C Data about flux contour in a table form     Oznaka - DA-5
+C KKONT,NSUR
+   31    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717541   1021482         0         0         0         0         0         0         0  164
+C Data about flux contour in a table form     Oznaka - DA-6
+C KKONT,NSUR
+   32    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717548   1021484         0         0         0         0         0         0         0  165
+C Data about flux contour in a table form     Oznaka - DA-7
+C KKONT,NSUR
+   33    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717555   1021469         0         0         0         0         0         0         0  166
+C Data about flux contour in a table form     Oznaka - DA-8
+C KKONT,NSUR
+   34    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717568   1021470         0         0         0         0         0         0         0  167
+C Data about flux contour in a table form     Oznaka - DA-9
+C KKONT,NSUR
+   35    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717580   1021473         0         0         0         0         0         0         0  168
+C Data about flux contour in a table form     Oznaka - DA-10
+C KKONT,NSUR
+   36    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717590   1021472         0         0         0         0         0         0         0  169
+C Data about flux contour in a table form     Oznaka - DA-11
+C KKONT,NSUR
+   37    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717597   1021467         0         0         0         0         0         0         0  170
+C Data about flux contour in a table form     Oznaka - DA-12
+C KKONT,NSUR
+   38    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717604   1021466         0         0         0         0         0         0         0  171
+C Data about flux contour in a table form     Oznaka - DA-13
+C KKONT,NSUR
+   39    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717611   1021465         0         0         0         0         0         0         0  172
+C Data about flux contour in a table form     Oznaka - DA-14
+C KKONT,NSUR
+   40    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717618   1021462         0         0         0         0         0         0         0  173
+C Data about flux contour in a table form     Oznaka - DA-15
+C KKONT,NSUR
+   41    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717627   1021461         0         0         0         0         0         0         0  174
+C Data about flux contour in a table form     Oznaka - DA-16
+C KKONT,NSUR
+   42    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717635   1021460         0         0         0         0         0         0         0  175
+C Data about flux contour in a table form     Oznaka - DA-17
+C KKONT,NSUR
+   43    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717642   1021463         0         0         0         0         0         0         0  176
+C Data about flux contour in a table form     Oznaka - DA-18
+C KKONT,NSUR
+   44    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717649   1021458         0         0         0         0         0         0         0  177
+C Data about flux contour in a table form     Oznaka - DA-19
+C KKONT,NSUR
+   45    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717656   1021457         0         0         0         0         0         0         0  178
+C Data about flux contour in a table form     Oznaka - DA-20
+C KKONT,NSUR
+   46    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717663   1021456         0         0         0         0         0         0         0  179
+C Data about flux contour in a table form     Oznaka - DA-21
+C KKONT,NSUR
+   47    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717671   1021474         0         0         0         0         0         0         0  180
+C Data about flux contour in a table form     Oznaka - DA-22
+C KKONT,NSUR
+   48    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717678   1021475         0         0         0         0         0         0         0  181
+C Data about flux contour in a table form     Oznaka - DBA-1
+C KKONT,NSUR
+   49    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717682   1021481         0         0         0         0         0         0         0  182
+C Data about flux contour in a table form     Oznaka - DBA-2
+C KKONT,NSUR
+   50    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717687   1021483         0         0         0         0         0         0         0  183
+C Data about flux contour in a table form     Oznaka - FDB-01
+C KKONT,NSUR
+   51    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717700   1021442         0         0         0         0         0         0         0  184
+C Data about flux contour in a table form     Oznaka - FDB-02
+C KKONT,NSUR
+   52    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717709   1021443         0         0         0         0         0         0         0  185
+C Data about flux contour in a table form     Oznaka - FDB-03
+C KKONT,NSUR
+   53    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717718   1021444         0         0         0         0         0         0         0  186
+C Data about flux contour in a table form     Oznaka - FDB-04
+C KKONT,NSUR
+   54    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717727   1021445         0         0         0         0         0         0         0  187
+C Data about flux contour in a table form     Oznaka - FDB-05
+C KKONT,NSUR
+   55    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717736   1021446         0         0         0         0         0         0         0  188
+C Data about flux contour in a table form     Oznaka - FDB-06
+C KKONT,NSUR
+   56    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717745   1021447         0         0         0         0         0         0         0  189
+C Data about flux contour in a table form     Oznaka - FDB-07
+C KKONT,NSUR
+   57    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717754   1021448         0         0         0         0         0         0         0  190
+C Data about flux contour in a table form     Oznaka - FDB-08
+C KKONT,NSUR
+   58    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717763   1021449         0         0         0         0         0         0         0  191
+C Data about flux contour in a table form     Oznaka - FDB-09
+C KKONT,NSUR
+   59    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717772   1021450         0         0         0         0         0         0         0  192
+C Data about flux contour in a table form     Oznaka - FDB-10
+C KKONT,NSUR
+   60    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717781   1021451         0         0         0         0         0         0         0  193
+C Data about flux contour in a table form     Oznaka - FDB-11
+C KKONT,NSUR
+   61    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717790   1021452         0         0         0         0         0         0         0  194
+C Data about flux contour in a table form     Oznaka - FDB-12
+C KKONT,NSUR
+   62    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717799   1021453         0         0         0         0         0         0         0  195
+C Data about flux contour in a table form     Oznaka - FDB-13
+C KKONT,NSUR
+   63    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717808   1021454         0         0         0         0         0         0         0  196
+C Data about flux contour in a table form     Oznaka - FDB-14
+C KKONT,NSUR
+   64    1
+C c) BOUNDARY CONDITIONS FOR ONE-DIMENSIONAL ELEMENT
+C NN,NPV1,NPV2,NPV3,NPV4
+    717809   1021455         0         0         0         0         0         0         0  197

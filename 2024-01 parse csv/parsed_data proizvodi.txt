@@ -1,0 +1,1400 @@
+Company: Termorad
+Coordinates: (43.910218, 20.002198)
+Products:
+
+Company: 9. Septembar
+Coordinates: (43.893223, 20.391076)
+Products:
+ - ST-40
+ - VF-2SS + HRT310
+ - VF-3
+ - VF-3
+ - VF-5
+ - VF-7/50HE
+ - VF-9
+ - VF-4
+
+Company: Elmont
+Coordinates: (43.888255, 20.342404)
+Products:
+
+Company: Metaloplastika
+Coordinates: (43.750695, 19.715647)
+Products:
+
+Company: LEONI Prokuplje
+Coordinates: (43.231181, 21.594964)
+Products:
+ - VF-2
+
+Company: Ming Kovačnica
+Coordinates: (43.338964, 21.871886)
+Products:
+ - ST-30
+ - VF-1D
+ - VF-2
+ - VF-3
+ - VF-3
+ - VF-3YT/50
+
+Company: Elmoprom
+Coordinates: (43.182743, 22.573235)
+Products:
+ - VF-3
+ - ST-15
+
+Company: Alatnica Krstić
+Coordinates: (43.1546, 22.564861)
+Products:
+ - VF-9 + TRT310
+ - VF-9 + HRT450
+ - VM-3 + HRT210
+ - UMC-750SS
+ - TL-2
+
+Company: Narcisuss
+Coordinates: (45.785482, 20.136679)
+Products:
+ - ST-10
+ - VF-1
+ - VF-2
+ - 
+
+Company: Feman
+Coordinates: (43.981996, 21.268528)
+Products:
+ - VF-6
+
+Company: Beoinox
+Coordinates: (44.84617, 20.478936)
+Products:
+
+Company: Mars
+Coordinates: (45.209217, 19.70208)
+Products:
+ - ST-30Y
+ - ST-20YSS
+ - ST-35
+ - DS-30SSY + Haas Barfeeder
+ - DS-30SSY + Haas Barfeeder
+ - DS-30SSY + Haas Barfeeder
+ - VF-2
+ - VF-2
+ - VF-2SS
+ - VF-2SSYT EU
+ - VF-3SSYT EU
+ - VF-2SS + TR160
+ - VF-2SS + TR160
+ - VF-2SS + TR160
+ - VF-4 / TR210
+ - DM-1 + TRT100 + URC 7L
+ - DM-1 + TRT100 + URC 7L
+ - DM-1 + TRT100 + URC 7L
+ - DM-2 + TRT100
+ - DM-2 + TRT100
+ - DM-1 + TRT100 + URC 7L
+ - DM-1 + TRT100 + URC 7L
+ - UMC-750SS
+ - UMC-750SS
+ - 
+ - Nakamura WT150 II
+ - Nakamura WT150 II
+ - 
+
+Company: Telsonic
+Coordinates: (45.290486, 19.964677)
+Products:
+ - ST-20SSY
+ - ST-20Y
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-3
+ - VM-2
+
+Company: Autoindustrija FKL
+Coordinates: (45.392468, 19.87577)
+Products:
+ - MDC-500
+ - MDC-500
+ - MDC-500
+ - SL-20HE
+ - SL-20HE
+ - SL-30HE
+ - SL-30HE
+ - SL-30HE
+ - SL-30HE
+ - SL-30HE
+ - SL-30HE
+ - ST-20
+ - ST-30
+ - ST-30
+ - ST-30
+ - ST-30
+ - ST-30
+ - ST-30
+ - ST-30
+ - VM-2
+
+Company: Agroferocoop
+Coordinates: (45.403768, 19.885884)
+Products:
+ - ST-30
+ - VF-2
+
+Company: Drina Plastika
+Coordinates: (44.949299, 20.205381)
+Products:
+ - VF-2BHE
+ - VF-3BHE
+ - VM-6
+
+Company: Metalika Wolf
+Coordinates: (44.935982, 20.149945)
+Products:
+ - ST-30
+ - VF-2 / HRT-210
+ - VF-2
+
+Company: Mašinski Fakultet Beograd
+Coordinates: (44.80652, 20.477604)
+Products:
+ - VF-5 / TR-210
+
+Company: Gamma Pro
+Coordinates: (44.760331, 20.495049)
+Products:
+
+Company: Metalika
+Coordinates: (44.526627, 20.592864)
+Products:
+
+Company: Evrokomerc
+Coordinates: (43.457718, 21.067658)
+Products:
+ - ST-20SS
+ - ST-30Y
+ - Tornos Sigma 32
+ - WT-150II
+ - VCE 750
+ - VCE 750
+ - 
+
+Company: Ittech Triade
+Coordinates: (43.712386, 20.692846)
+Products:
+ - VF-5
+
+Company: Stax Technologies
+Coordinates: (43.882166, 20.396268)
+Products:
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-3
+ - VF-3
+ - VF-3
+ - VF-3
+ - VF-6
+ - VF-6
+ - VF-9/50
+ - VF-9/50
+ - ST-30Y
+ - 
+
+Company: Gomma Line
+Coordinates: (44.018512, 20.942659)
+Products:
+ - ST-10 + Fusion dodavac
+ - SL-10 + Samsys dodavac
+ - SL-10
+ - SL-10
+ - VF-1
+ - VF-2SS
+ - VF-3/50
+ - VM-3
+ - VM-3
+
+Company: Siemens Mobility
+Coordinates: (44.102004, 20.881384)
+Products:
+ - VF-3SS
+ - VF-10/50
+ - VF-10/50
+
+Company: Hemofarm STADA
+Coordinates: (45.101896, 21.277213)
+Products:
+ - TL-1HE
+ - VF-3DHE / HRT-210
+ - VM-6 / TR210
+
+Company: SCGM
+Coordinates: (44.017946, 20.943183)
+Products:
+
+Company: Zastava Oružje
+Coordinates: (44.007084, 20.912722)
+Products:
+ - VF-2 / HRT-210
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+
+Company: Skala Garden
+Coordinates: (46.101064, 19.701308)
+Products:
+ - VM-2
+
+Company: Ariljemetal
+Coordinates: (41.991211, 21.485377)
+Products:
+ - ST-20Y / BAR3010ST
+
+Company: Wabtec MZT
+Coordinates: (41.994828, 21.485723)
+Products:
+ - ST-20
+ - ST-20
+ - ST-30 / BAR3010ST
+ - ST-30SS / BAR3010ST
+ - ST-30SS
+ - ST-30Y
+ - Tornos Delta 20
+
+Company: Bratstvo Inox
+Coordinates: (41.121952, 20.808103)
+Products:
+ - ST-30
+ - VF-3
+
+Company: FAB Doo
+Coordinates: (44.298337, 20.002853)
+Products:
+ - VF-3YT/50
+ - VF-2YT
+
+Company: MET SZR
+Coordinates: (43.863542, 20.391977)
+Products:
+ - VM-3
+ - VM-3
+ - SMiniMill
+
+Company: Tehnički remontni zavod
+Coordinates: (43.881593, 20.362859)
+Products:
+ - ST-30
+
+Company: Alfa Plam
+Coordinates: (42.5451481, 21.9107782)
+Products:
+ - VF-8/50
+ - EC-1600ZT
+
+Company: Borbeni složeni sistemi
+Coordinates: (44.342285, 21.079572)
+Products:
+ - VF-4
+ - VF-9/50
+
+Company: Erozimat d.o.o. Jagodina
+Coordinates: (43.981127, 21.268609)
+Products:
+ - VM-2
+ - VM-2
+
+Company: Gasteh D.O.O.
+Coordinates: (45.030084, 20.102046)
+Products:
+
+Company: INMOLD D.O.O.
+Coordinates: (43.844745, 20.041487)
+Products:
+ - VF-2
+
+Company: Knott Autoflex Yug
+Coordinates: (45.603327, 20.034074)
+Products:
+ - MDC-500
+ - ST-20
+
+Company: NVM Uroš d.o.o.
+Coordinates: (44.939404, 20.20934)
+Products:
+
+Company: Pestan d.o.o.
+Coordinates: (44.335964, 20.506447)
+Products:
+ - TM-1HE
+
+Company: WCT
+Coordinates: (45.104062, 19.800088)
+Products:
+ - UMC-750SS
+
+Company: Teximp Doo
+Coordinates: (44.825986, 20.382969)
+Products:
+ - www.teximp.com
+ - 011 7129428
+
+Company: Tehnika
+Coordinates: (45.052063, 20.076528)
+Products:
+
+Company: T-1
+Coordinates: (45.809486, 20.109776)
+Products:
+ - VF-2
+ - VF-3
+ - SL-40
+ - MDC-500
+
+Company: IDAS
+Coordinates: (45.765147, 20.13515)
+Products:
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-2
+ - VF-4
+ - VF-4
+ - ST-20
+ - ST-30Y
+ - 
+
+Company: Elmetal
+Coordinates: (45.916621, 20.098619)
+Products:
+ - TM-1HE
+ - TM-2
+ - VF-1DEHE
+ - VF-3YT
+ - VM-3
+ - UMC-1000
+ - 
+
+Company: Zupčanik
+Coordinates: (45.803377, 20.116248)
+Products:
+
+Company: InterCrown-Plastic
+Coordinates: (44.953896, 20.202398)
+Products:
+ - VF-3SS
+
+Company: Daido Metal
+Coordinates: (42.387443, 18.749403)
+Products:
+
+Company: Mašinski fakultet Kragujevac
+Coordinates: (44.01894, 20.905614)
+Products:
+
+Company: Livnica Preciznih Odlivaka
+Coordinates: (45.790852, 20.121084)
+Products:
+
+Company: Tehnička škola Ada
+Coordinates: (45.790805, 20.129201)
+Products:
+ - TM-1
+
+Company: TARA Group
+Coordinates: (42.956658, 19.584703)
+Products:
+ - VF-2SS / HRT210
+ - VF-2SS / HRT210
+ - EC-400
+ - VF-1
+
+Company: Srednja mašinska škola Kruševac
+Coordinates: (43.577702, 21.327853)
+Products:
+
+Company: Dermatex Elektro
+Coordinates: (44.853076, 20.399917)
+Products:
+
+Company: Lilly Trade
+Coordinates: (45.9168699, 20.0958345)
+Products:
+
+Company: Jokey Bg D.O.O.
+Coordinates: (44.938306, 20.217322)
+Products:
+ - VF-3BHE
+
+Company: Q-TEK
+Coordinates: (42.090436, 19.091396)
+Products:
+ - DT-1
+
+Company: Sin-Kom
+Coordinates: (43.110708, 22.64809)
+Products:
+ - VF-6
+
+Company: Unior-WEBA
+Coordinates: (43.999549, 20.913608)
+Products:
+ - VM-3
+
+Company: Zastava Inpro
+Coordinates: (43.99819, 20.914938)
+Products:
+ - ST-30
+ - VF-2SS
+
+Company: Vipol
+Coordinates: (45.285535, 19.815474)
+Products:
+
+Company: Vossloh MIN Skretnice d.o.o
+Coordinates: (43.338413, 21.873495)
+Products:
+
+Company: Trgoprevoz
+Coordinates: (44.625346, 21.173139)
+Products:
+
+Company: UMP Freskop
+Coordinates: (44.285812, 19.873184)
+Products:
+
+Company: Akvaton
+Coordinates: (41.992041, 21.479763)
+Products:
+
+Company: INSA
+Coordinates: (44.8509, 20.390725)
+Products:
+
+Company: Eurotehna
+Coordinates: (43.9803314, 19.5709894)
+Products:
+ - VM-3
+ - VM-3
+
+Company: Mag Plast
+Coordinates: (43.971499, 19.558769)
+Products:
+
+Company: Ruen
+Coordinates: (41.913575, 22.425232)
+Products:
+
+Company: ORELJ
+Coordinates: (44.94057, 20.207559)
+Products:
+ - VCE-750
+ - VCE-1250
+ - VF-7
+ - VF-8
+ - 
+
+Company: SERVOTEH
+Coordinates: (44.840479, 20.213281)
+Products:
+
+Company: Modul SZR
+Coordinates: (46.084714, 19.659112)
+Products:
+ - TL-2
+
+Company: Alatnica Gajic
+Coordinates: (44.990045, 20.140943)
+Products:
+
+Company: Alatnica ADA
+Coordinates: (45.791315, 20.140426)
+Products:
+ - VF-1
+ - Super MiniMill
+
+Company: Reduktor
+Coordinates: (44.953213, 20.211314)
+Products:
+
+Company: GS Evrometal
+Coordinates: (44.235501, 21.20525)
+Products:
+
+Company: Fiting
+Coordinates: (45.312412, 19.836159)
+Products:
+
+Company: Limar ZR
+Coordinates: (45.393545, 20.392392)
+Products:
+
+Company: IGMA Inžnjering
+Coordinates: (44.871678, 20.465362)
+Products:
+
+Company: Isico
+Coordinates: (44.719539, 20.373963)
+Products:
+ - TM-3HE
+
+Company: KB Armature
+Coordinates: (44.789278, 20.422658)
+Products:
+
+Company: Milan Blagojević Namenska
+Coordinates: (43.8575, 20.132918)
+Products:
+ - VM-3
+
+Company: SMR Bata
+Coordinates: (45.790367, 20.136759)
+Products:
+ - VF-2
+ - VF-2YT-EU
+
+Company: SZR Mikron
+Coordinates: (43.938284, 20.315094)
+Products:
+
+Company: DAKA
+Coordinates: (45.361315, 19.534483)
+Products:
+
+Company: Zastava Kovačnica
+Coordinates: (44.002574, 20.912309)
+Products:
+ - SL-40THE
+
+Company: Tehnička škola Priboj
+Coordinates: (43.562718, 19.539818)
+Products:
+
+Company: SZR Alatnica M
+Coordinates: (43.891908, 20.345403)
+Products:
+
+Company: Swissmechanic
+Coordinates: (44.239225, 21.273115)
+Products:
+
+Company: Srednja mašinska škola - Novi Sad
+Coordinates: (45.259996, 19.828101)
+Products:
+
+Company: MIA Stil
+Coordinates: (41.441978, 22.644646)
+Products:
+
+Company: Industrijska Pneumatika
+Coordinates: (43.617833, 20.993006)
+Products:
+
+Company: Dunav AD
+Coordinates: (45.261469, 19.855964)
+Products:
+
+Company: CAT doo
+Coordinates: (43.885212, 20.333043)
+Products:
+
+Company: AMAK SP
+Coordinates: (41.134347, 20.819167)
+Products:
+
+Company: TENT
+Coordinates: (44.670789, 20.160749)
+Products:
+
+Company: FERMES
+Coordinates: (45.199184, 19.885182)
+Products:
+ - ST-10
+ - ST-10
+ - ST-10
+ - VF-1
+ - CL-1
+ - CL-1
+ - 
+
+Company: Sigit
+Coordinates: (43.99168, 20.877521)
+Products:
+ - VF-7
+
+Company: MultiTest
+Coordinates: (45.628473, 20.020657)
+Products:
+ - SuperMiniMill 2
+
+Company: Nis Naftagas tehnički servisi
+Coordinates: (45.371157, 20.414357)
+Products:
+ - ST-10
+ - ST-40
+ - VF-3BHE
+
+Company: MPK Trejd
+Coordinates: (44.282666, 19.939258)
+Products:
+
+Company: Alatnica Bokan
+Coordinates: (45.2488936, 19.7171835)
+Products:
+ - VF-3
+ - VF-6
+ - VCE-550
+ - VCE-750
+ - VCE-1000
+
+Company: Tim Sistem
+Coordinates: (44.949712, 20.197109)
+Products:
+
+Company: DEMA STIL
+Coordinates: (42.190627, 22.304295)
+Products:
+ - VF-4SS
+
+Company: Konelek
+Coordinates: (44.914164, 20.26076)
+Products:
+ - CL-2
+ - VF-2 + TR160
+
+Company: LEONI Malošište
+Coordinates: (43.227819, 21.837151)
+Products:
+
+Company: Termoplast
+Coordinates: (44.063338, 22.102687)
+Products:
+
+Company: Sinterfuse
+Coordinates: (43.850328, 19.855503)
+Products:
+ - ST-10
+ - ST-10
+
+Company: Suprematec
+Coordinates: (44.949545, 20.195237)
+Products:
+ - VM-3
+
+Company: Alatverk
+Coordinates: (44.977227, 20.15238)
+Products:
+ - VF-3YT
+
+Company: 2A Inzenjering
+Coordinates: (44.039336, 20.893909)
+Products:
+
+Company: DAVAX
+Coordinates: (45.310058, 19.899319)
+Products:
+
+Company: MSC-CG
+Coordinates: (42.090142, 19.107993)
+Products:
+
+Company: HDD Surgery
+Coordinates: (44.8870061, 20.3094988)
+Products:
+ - ST-20SSY
+ - VM-2
+
+Company: La Co Me Tecno
+Coordinates: (43.769068, 20.6326567)
+Products:
+ - VF-4SS
+ - VF-4SS
+
+Company: Alcom
+Coordinates: (44.871846, 20.108285)
+Products:
+
+Company: Unimetal
+Coordinates: (44.747992, 20.485716)
+Products:
+
+Company: LORD Ingenering
+Coordinates: (43.879204, 20.346218)
+Products:
+
+Company: Super Plast
+Coordinates: (44.949142, 20.202747)
+Products:
+ - SL-30
+ - VF-3
+
+Company: Vuksanovic SZAR
+Coordinates: (44.022416, 21.337252)
+Products:
+
+Company: Speld
+Coordinates: (44.44303, 21.076696)
+Products:
+ - 
+
+Company: GMB Automatik
+Coordinates: (44.590891, 20.347146)
+Products:
+
+Company: Vuves Commerce
+Coordinates: (45.303829, 19.926474)
+Products:
+
+Company: Teleoptik Ziroskopi
+Coordinates: (44.852979, 20.386977)
+Products:
+ - DM-2 + TRT100
+ - DS30SSY + Hass Barfeeder
+ - ST-15Y + Hass Barfeeder
+ - ST-25Y + Hass Barfeeder
+ - ST-30SSY + Hass Barfeeder
+ - UMC-750SS
+ - VF-3SSYT
+ - VM-2 + TRT160
+
+Company: Euro-Heat
+Coordinates: (44.024776, 20.938354)
+Products:
+
+Company: MZT Pumpi
+Coordinates: (41.994194, 21.486576)
+Products:
+
+Company: Metalogalvanic
+Coordinates: (43.882806, 20.32651)
+Products:
+
+Company: ELBI
+Coordinates: (44.275461, 19.887722)
+Products:
+
+Company: Mlino-mont
+Coordinates: (44.848598, 19.48406)
+Products:
+ - ST-20
+
+Company: General Solutions
+Coordinates: (45.389763, 20.434806)
+Products:
+
+Company: Harder Digital Sova
+Coordinates: (43.30517, 21.948511)
+Products:
+ - VF-2SS + HTR160
+
+Company: Pobeda Compani
+Coordinates: (44.949756, 20.204802)
+Products:
+
+Company: AbsoluteCNC
+Coordinates: (45.240245, 19.676416)
+Products:
+ - SL-20
+ - SL-20
+ - SL-20
+ - 
+
+Company: DDM Metaling
+Coordinates: (42.555808, 21.93998)
+Products:
+
+Company: CNC Obrada
+Coordinates: (44.3797426, 21.0824954)
+Products:
+ - UMC-500
+ - VF-2SS
+ - ST-20
+ - ST-25
+ - ST-30Y
+ - ST-30Y
+ - ST-30Y
+ - Nakamura-Tome AS-200LMYS
+ - 
+
+Company: Milija Simovic Doo
+Coordinates: (43.853689, 20.385402)
+Products:
+
+Company: Woksal
+Coordinates: (43.84805, 19.86288)
+Products:
+
+Company: Amphenol
+Coordinates: (41.900193, 22.372947)
+Products:
+ - VF-4SS
+
+Company: EMKA
+Coordinates: (44.255372, 20.094232)
+Products:
+ - ST-10
+ - ST-10
+
+Company: Mashtronics
+Coordinates: (44.422433, 20.671286)
+Products:
+ - VF-6
+ - ST-20Y
+ - 
+
+Company: GS Evrometal
+Coordinates: (44.238312, 21.209093)
+Products:
+ - VF-3SS + HRT210
+ - VF-6
+ - VF-9/50
+ - UMC-750
+ - 
+
+Company: Biotehnika IVD
+Coordinates: (43.712162, 20.725954)
+Products:
+
+Company: Politehnička Škola Kragujevac
+Coordinates: (44.007376, 20.916256)
+Products:
+ - ST-10
+ - MiniMill EDU
+
+Company: MetalProfil
+Coordinates: (45.811522, 20.108534)
+Products:
+ - ST-30
+
+Company: Multidekor
+Coordinates: (44.3796527, 21.0825447)
+Products:
+ - VF-3SS
+
+Company: Orox
+Coordinates: (45.2514159, 19.8853961)
+Products:
+
+Company: Elmed
+Coordinates: (45.4109389, 19.9006136)
+Products:
+ - VF-2YT
+
+Company: Metalex
+Coordinates: (41.4516686, 22.0215567)
+Products:
+
+Company: Golas
+Coordinates: (44.8718081, 20.1021067)
+Products:
+
+Company: ZR Pervas
+Coordinates: (44.293147, 19.9214723)
+Products:
+ - VCE-750
+
+Company: Junior SZR
+Coordinates: (44.9781588, 20.1694006)
+Products:
+
+Company: Fabrorum
+Coordinates: (44.2386538, 21.2725677)
+Products:
+
+Company: GM Converting
+Coordinates: (44.0334777, 20.5100697)
+Products:
+ - VCE1250
+
+Company: Agro-Art
+Coordinates: (44.9796306, 20.1621943)
+Products:
+
+Company: Vucko
+Coordinates: (44.9759548, 20.1682354)
+Products:
+
+Company: Alinoks
+Coordinates: (43.9425676, 21.1289675)
+Products:
+
+Company: PerunMoto
+Coordinates: (44.7943961, 20.5206896)
+Products:
+
+Company: ZF Serbia
+Coordinates: (44.9136505, 20.6438383)
+Products:
+ - ST-30Y
+
+Company: Leoni Niš
+Coordinates: (43.3172012, 21.8359992)
+Products:
+
+Company: SinterMetal-EC
+Coordinates: (44.8870268, 20.3099872)
+Products:
+
+Company: PI Brus
+Coordinates: (43.1370221, 22.5424502)
+Products:
+
+Company: Zarkom
+Coordinates: (45.101706, 21.3061999)
+Products:
+
+Company: Hydromag
+Coordinates: (43.8501003, 21.4078904)
+Products:
+
+Company: Plazmateh
+Coordinates: (43.8905196, 20.3664786)
+Products:
+
+Company: Radijator Inženjering
+Coordinates: (43.7406977, 20.6679804)
+Products:
+ - ST-30Y
+
+Company: Omnis Lukić
+Coordinates: (43.3963645, 21.7992348)
+Products:
+
+Company: Inmold Zona doo
+Coordinates: (43.6212911, 19.492731)
+Products:
+ - VM-3
+
+Company: DDM Metaling
+Coordinates: (42.9705851, 21.9535832)
+Products:
+
+Company: Unipromet
+Coordinates: (43.889931, 20.3857597)
+Products:
+
+Company: Como
+Coordinates: (43.9942652, 21.2598991)
+Products:
+
+Company: Jomapex
+Coordinates: (45.3704184, 20.0473813)
+Products:
+
+Company: AutoStop Interiors
+Coordinates: (43.0098244, 21.9406343)
+Products:
+
+Company: Beoven
+Coordinates: (44.7960319, 20.3053287)
+Products:
+
+Company: Vesimpex
+Coordinates: (44.7349466, 20.4461196)
+Products:
+
+Company: MotoBike
+Coordinates: (45.3035643, 19.9287801)
+Products:
+
+Company: Sintal
+Coordinates: (44.8138959, 20.5250809)
+Products:
+
+Company: Marel
+Coordinates: (43.5431644, 21.3542394)
+Products:
+ - VF-3YT
+
+Company: Kordun Metali
+Coordinates: (45.7708584, 20.1344769)
+Products:
+
+Company: Telix
+Coordinates: (45.2484124, 19.8082307)
+Products:
+ - VF-2SSY
+ - VF-2SSY
+ - VF-3SSY
+
+Company: Alfaprodukt
+Coordinates: (44.7349208, 20.3792579)
+Products:
+
+Company: Kolektor
+Coordinates: (45.286823, 19.8028156)
+Products:
+ - VF-2YT
+
+Company: Delta Tehnik Marold
+Coordinates: (45.2087215, 19.7148817)
+Products:
+
+Company: SMR Mikron
+Coordinates: (44.7285775, 20.3813483)
+Products:
+
+Company: Microsoft
+Coordinates: (44.8184045, 20.4239438)
+Products:
+
+Company: Metalkov 1985
+Coordinates: (44.8572865, 20.3527658)
+Products:
+ - ST-20Y
+ - LNS HYS 6.26-6.46 HS
+ - LNS HYS 6.55-6.68 HS
+ - 
+
+Company: Sato
+Coordinates: (43.6863502, 20.5766299)
+Products:
+
+Company: Alatplast
+Coordinates: (46.0877168, 19.6342541)
+Products:
+
+Company: Srednja škola Knić
+Coordinates: (43.9272975, 20.7145764)
+Products:
+
+Company: Tropiko
+Coordinates: (45.126045, 19.2301182)
+Products:
+
+Company: 3Lateral
+Coordinates: (45.25528600000001, 19.834668)
+Products:
+ - VF-2
+ - HRT-160
+ - TRT160
+ - 
+
+Company: S.R. Janković
+Coordinates: (44.641502, 20.893858)
+Products:
+
+Company: Adamet
+Coordinates: (45.792036, 20.14011)
+Products:
+
+Company: Tehnotim Šajković
+Coordinates: (44.474501, 21.07929)
+Products:
+ - VF-2DCE
+
+Company: PEKOM INŽENJERING
+Coordinates: (43.720622, 20.680481)
+Products:
+
+Company: Aikiva Machines doo
+Coordinates: (44.8674375, 20.4630625)
+Products:
+ - HRT210
+
+Company: PROMEK
+Coordinates: (44.3493792, 21.086559)
+Products:
+ - VF-2SS
+
+Company: PWO SEE d.o.o
+Coordinates: (44.0003915, 20.9138567)
+Products:
+ - VF-6
+ - VF-3
+ - VF-3
+
+Company: Albatros
+Coordinates: (45.0340877, 20.0894661)
+Products:
+
+Company: Galeb
+Coordinates: (44.7378867, 19.6752067)
+Products:
+ - ST-10
+
+Company: EMproject89
+Coordinates: (43.631018, 20.8669589)
+Products:
+
+Company: JE&STE CAD/CAM
+Coordinates: (44.807086, 20.343853)
+Products:
+
+Company: LMB Europa
+Coordinates: (43.329521, 21.897265)
+Products:
+
+Company: Gama Consulting
+Coordinates: (43.229678, 21.5918245)
+Products:
+ - VF-6
+
+Company: SZR Universal (Steel Industry)
+Coordinates: (44.98369553787147, 20.145747301755463)
+Products:
+
+Company: Technique ENG. ING.
+Coordinates: (43.91283749999999, 20.3389531)
+Products:
+
+Company: IBC Technologies
+Coordinates: (44.7558375, 20.3550781)
+Products:
+
+Company: Livnica Kikinda - Cimos
+Coordinates: (45.8113125, 20.4386406)
+Products:
+ - ST-35
+ - ST-35
+ - ST-35
+
+Company: SZUTR Stojanović
+Coordinates: (43.1808125, 22.5730469)
+Products:
+ - SL-30
+
+Company: Mehanika-Fives
+Coordinates: (43.5603375, 21.6917344)
+Products:
+ - VF-1DYTHE / HRT210
+ - VF-3SS
+
+Company: Zombori
+Coordinates: (45.7837875, 20.1280469)
+Products:
+
+Company: TEN FINGERS
+Coordinates: (44.9428775, 20.2274542)
+Products:
+
+Company: Mechatronics Unmanned systems & Technology Solutions
+Coordinates: (44.8440125, 20.5119531)
+Products:
+
+Company: Johnson Matthey Macedonia
+Coordinates: (41.9864417, 21.6224745)
+Products:
+ - TM-3
+ - ST-30
+ - VF-2SS
+
+Company: AMM Manufacturing
+Coordinates: (44.1216625, 20.8579844)
+Products:
+ - VF-10/50
+ - ST-30
+ - VF-4SS
+ - VF-4BHE
+
+Company: Leikauf Metallbearbeitung d.o.o.
+Coordinates: (45.6929125, 20.0822031)
+Products:
+ - VF-2SS-EU
+ - VF-2SS-EU
+ - 
+
+Company: BSK Obrenovac
+Coordinates: (44.6519457, 20.2020344)
+Products:
+
+Company: AGENA TECHNOLOGY DOO - ŠIMANOVCI
+Coordinates: (44.8846125, 20.1023594)
+Products:
+
+Company: Mašinski centar Arsenijević
+Coordinates: (43.9004625, 20.3544219)
+Products:
+
+Company: Miren doo
+Coordinates: (46.1226875, 19.6659375)
+Products:
+
+Company: Dura Automotive
+Coordinates: (41.9964875, 21.5973281)
+Products:
+
+Company: GPS Insulators
+Coordinates: (44.73538749999999, 20.4462031)
+Products:
+
+Company: Top Level
+Coordinates: (44.84861249999999, 20.3783594)
+Products:
+
+Company: TM DOO Štip
+Coordinates: (41.7594625, 22.1807656)
+Products:
+ - VF-2SS
+ - ST-35Y
+
+Company: Avala Auto Centar
+Coordinates: (44.9808625, 20.1447656)
+Products:
+
+Company: MP METAL SOLUTIONS DOO
+Coordinates: (44.8826875, 20.3185156)
+Products:
+ - VF-4SS
+ - VF-4SS
+
+Company: Technosteel & Consulting doo
+Coordinates: (44.9941875, 19.8196406)
+Products:
+ - HRT310
+
+Company: Schiebel Components
+Coordinates: (44.0063966, 21.2562027)
+Products:
+
+Company: RASCO-TAMP
+Coordinates: (45.9158625, 20.0973827)
+Products:
+ - VF-2DHE
+
+Company: Termometal
+Coordinates: (45.7836125, 20.1222969)
+Products:
+ - ST-20
+ - ST-30Y
+ - ST-30
+
+Company: KEDAR DOO
+Coordinates: (45.3505625, 19.5841406)
+Products:
+
+Company: CNC Solutions Kukić
+Coordinates: (44.7742625, 19.6723594)
+Products:
+
+Company: Metal Konstrukt doo
+Coordinates: (45.8110375, 19.6496406)
+Products:
+
+Company: Plamen doo
+Coordinates: (45.0263625, 20.1026719)
+Products:
+
+Company: Pelcer 
+Coordinates: (46.1059625, 19.7007656)
+Products:
+
+Company: GrappS doo
+Coordinates: (44.6762125, 20.9444531)
+Products:
+
+Company: Elektromotor - Šimon doo
+Coordinates: (45.9424875, 20.1278594)
+Products:
+ - VF-3SS
+ - VF-6/40HE
+
+Company: Leoni - Kraljevo
+Coordinates: (43.73146250000001, 20.6667969)
+Products:
+
+Company: Reduktori - Niš
+Coordinates: (43.3041125, 21.9485469)
+Products:
+
+Company: Politehnika - Škola za nove tehnologije
+Coordinates: (44.8354375, 20.3736406)
+Products:
+ - ST-10Y
+
+Company: CIP doo
+Coordinates: (43.7298125, 20.7178906)
+Products:
+ - Tornos Swiss Nano 7
+
+Company: Element 2018
+Coordinates: (44.7494125, 19.6620469)
+Products:
+ - SL-20
+
+Company: JOMI-ING
+Coordinates: (45.3083625, 19.9029219)
+Products:
+ - VF-9 / TR200Y
+ - ST-10Y
+ - ST-30Y
+ - VM-3
+
+Company: NS-STEEL 1989 doo
+Coordinates: (45.2470625, 19.7836406)
+Products:
+
+Company: TERMIČKA OBRADA METALA VUJOŠEVIĆ
+Coordinates: (44.4348125, 20.6573125)
+Products:
+
+Company: Škapina doo
+Coordinates: (43.8539875, 20.3454219)
+Products:
+
+Company: Ivavet doo
+Coordinates: (45.2359625, 19.6255469)
+Products:
+
+Company: PRDC doo
+Coordinates: (44.8766375, 20.1149844)
+Products:
+ - TM-2P
+ - TM-3P
+ - UMC-750SS
+
+Company: M.J.R. COMPANI - SZR JOVAN MAJKIĆ PR
+Coordinates: (45.0539125, 20.0786094)
+Products:
+
+Company: M PROJECT CO. DOO
+Coordinates: (43.8918123, 20.3678118)
+Products:
+
+Company: Eurowin
+Coordinates: (45.2707625, 20.0892969)
+Products:
+ - VF-3SSYT
+ - UMC-500
+
+Company: Dmiteh
+Coordinates: (43.8941625, 20.3590469)
+Products:
+
+Company: Megaplast ZTR
+Coordinates: (45.7659625, 19.1227031)
+Products:
+
+Company: B2B Nedakusi
+Coordinates: (43.0581875, 19.7710781)
+Products:
+
+Company: TCS S.E. EUROPE DOO
+Coordinates: (45.11188749999999, 21.2787656)
+Products:
+
+Company: AMS Sistem doo
+Coordinates: (43.9998875, 20.9137969)
+Products:
+ - HRT210SS
+
+Company: HyperMilling
+Coordinates: (44.37621250000001, 20.9673594)
+Products:
+
+Company: Zlatara Gema
+Coordinates: (43.3164625, 21.8912344)
+Products:
+

@@ -1,0 +1,319 @@
+INIT MASTER(S)
+NASTRAN SYSTEM(442)=-1,SYSTEM(319)=1
+ID model,FEMAP
+SOL SESTATIC
+CEND
+  TITLE = Analiza
+  ECHO = NONE
+  DISPLACEMENT(PLOT) = ALL
+  SPCFORCE(PLOT) = ALL
+  OLOAD(PLOT) = ALL
+  FORCE(PLOT,CORNER) = ALL
+  STRESS(PLOT,CORNER) = ALL
+  SPC = 1
+  LOAD = 1
+BEGIN BULK
+$ ***************************************************************************
+$   Written by : PX2DAT
+$   Version    : 2021.2.0
+$   Translator : PX2DAT
+$   From Model :
+$   Date       : Mon Nov 29 11:28:46 2021
+$   Output To  :
+$ ***************************************************************************
+$
+PARAM,PRGPST,NO
+PARAM,POST,-1
+PARAM,OGEOM,NO
+PARAM,AUTOSPC,YES
+PARAM,K6ROT,100.
+PARAM,GRDPNT,0
+CORD2C         1       0      0.      0.      0.      0.      0.      1.+FEMAPC1
++FEMAPC1      1.      0.      1.
+CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
++FEMAPC2      1.      0.      1.
+***************************************************************************
+$ Femap Property 1: SOLID_1
+        PSOLID         1       1       0        
+$ Femap Property 2: SOLID_2
+        PSOLID         2       2       0        
+$ Femap Property 3: SOLID_3
+        PSOLID         3       3       0        
+$ Femap Property 4: SOLID_4
+        PSOLID         4       4       0        
+$ Femap Property 5: SOLID_5
+        PSOLID         5       5       0        
+$ Femap Property 6: SOLID_6
+        PSOLID         6       6       0        
+$ Femap Property 7: SOLID_7
+        PSOLID         7       7       0        
+$ Femap Property 8: SOLID_8
+        PSOLID         8       8       0        
+$ Femap Property 9 : ROD_1
+        PROD           9       9      .1      0.      0.      0.        
+$ Femap Property 10 : ROD_2
+        PROD          10      10      .1      0.      0.      0.        
+$ Femap Property 11 : ROD_3
+        PROD          11      11      .1      0.      0.      0.        
+$ Femap Property 12 : ROD_4
+        PROD          12      12      .1      0.      0.      0.        
+$ Femap Property 13 : ROD_5
+        PROD          13      13      .1      0.      0.      0.        
+$ Femap Property 14 : ROD_6
+        PROD          14      14      .1      0.      0.      0.        
+$ Femap Property 15 : ROD_7
+        PROD          15      15      .1      0.      0.      0.        
+$ Femap Property 16 : ROD_8
+        PROD          16      16      .1      0.      0.      0.        
+$ Femap Property 17 : ROD_9
+        PROD          17      17      .1      0.      0.      0.        
+$ Femap Property 18 : ROD_10
+        PROD          18      18      .1      0.      0.      0.        
+$ Femap Property 19 : ROD_11
+        PROD          19      19      .1      0.      0.      0.        
+$ Femap Property 20 : ROD_12
+        PROD          20      20      .1      0.      0.      0.        
+$ Femap Property 21 : ROD_13
+        PROD          21      21      .1      0.      0.      0.        
+$ Femap Property 22 : ROD_14
+        PROD          22      22      .1      0.      0.      0.        
+$ Femap Property 23 : ROD_15
+        PROD          23      23      .1      0.      0.      0.        
+$ Femap Property 24 : ROD_16
+        PROD          24      24      .1      0.      0.      0.        
+$ Femap Property 25 : ROD_17
+        PROD          25      25      .1      0.      0.      0.        
+$ Femap Property 26 : ROD_18
+        PROD          26      26      .1      0.      0.      0.        
+$ Femap Property 27 : ROD_19
+        PROD          27      27      .1      0.      0.      0.        
+$ Femap Property 28 : ROD_20
+        PROD          28      28      .1      0.      0.      0.        
+$ Femap Property 29 : ROD_21
+        PROD          29      29      .1      0.      0.      0.        
+$ Femap Property 30 : ROD_22
+        PROD          30      30      .1      0.      0.      0.        
+$ Femap Property 31 : ROD_23
+        PROD          31      31      .1      0.      0.      0.        
+$ Femap Property 32 : ROD_24
+        PROD          32      32      .1      0.      0.      0.        
+$ Femap Property 33 : ROD_25
+        PROD          33      33      .1      0.      0.      0.        
+$ Femap Property 34 : ROD_26
+        PROD          34      34      .1      0.      0.      0.        
+$ Femap Property 35 : ROD_27
+        PROD          35      35      .1      0.      0.      0.        
+$ Femap Property 36 : ROD_28
+        PROD          36      36      .1      0.      0.      0.        
+$ Femap Property 37 : ROD_29
+        PROD          37      37      .1      0.      0.      0.        
+$ Femap Property 38 : ROD_30
+        PROD          38      38      .1      0.      0.      0.        
+$ Femap Property 39 : ROD_31
+        PROD          39      39      .1      0.      0.      0.        
+$ Femap Property 40 : ROD_32
+        PROD          40      40      .1      0.      0.      0.        
+$ Femap Property 41 : ROD_33
+        PROD          41      41      .1      0.      0.      0.        
+$ Femap Property 42 : ROD_34
+        PROD          42      42      .1      0.      0.      0.        
+$ Femap Property 43 : ROD_35
+        PROD          43      43      .1      0.      0.      0.        
+$ Femap Property 44 : ROD_36
+        PROD          44      44      .1      0.      0.      0.        
+$ Femap Property 45 : ROD_37
+        PROD          45      45      .1      0.      0.      0.        
+$ Femap Property 46 : ROD_38
+        PROD          46      46      .1      0.      0.      0.        
+$ Femap Property 47 : ROD_39
+        PROD          47      47      .1      0.      0.      0.        
+$ Femap Property 48 : ROD_40
+        PROD          48      48      .1      0.      0.      0.        
+$ Femap Property 49 : ROD_41
+        PROD          49      49      .1      0.      0.      0.        
+$ Femap Property 50 : ROD_42
+        PROD          50      50      .1      0.      0.      0.        
+$ Femap Property 51 : ROD_43
+        PROD          51      51      .1      0.      0.      0.        
+$ Femap Property 52 : ROD_44
+        PROD          52      52      .1      0.      0.      0.        
+$ Femap Property 53 : ROD_45
+        PROD          53      53      .1      0.      0.      0.        
+$ Femap Property 54 : ROD_46
+        PROD          54      54      .1      0.      0.      0.        
+$ Femap Property 55 : ROD_47
+        PROD          55      55      .1      0.      0.      0.        
+$ Femap Property 56 : ROD_48
+        PROD          56      56      .1      0.      0.      0.        
+$ Femap Property 57 : ROD_49
+        PROD          57      57      .1      0.      0.      0.        
+$ Femap Property 58 : ROD_50
+        PROD          58      58      .1      0.      0.      0.        
+$ Femap Property 59 : ROD_51
+        PROD          59      59      .1      0.      0.      0.        
+$ Femap Property 60 : ROD_52
+        PROD          60      60      .1      0.      0.      0.        
+$ Femap Property 61 : ROD_53
+        PROD          61      61      .1      0.      0.      0.        
+$ Femap Property 62 : ROD_54
+        PROD          62      62      .1      0.      0.      0.        
+$ Femap Property 63 : ROD_55
+        PROD          63      63      .1      0.      0.      0.        
+$ Femap Property 64 : ROD_56
+        PROD          64      64      .1      0.      0.      0.        
+$ Femap Property 65 : ROD_57
+        PROD          65      65      .1      0.      0.      0.        
+$ Femap Property 66 : ROD_58
+        PROD          66      66      .1      0.      0.      0.        
+$ Femap Property 67 : ROD_59
+        PROD          67      67      .1      0.      0.      0.        
+$ Femap Property 68 : ROD_60
+        PROD          68      68      .1      0.      0.      0.        
+$ Femap Property 69 : ROD_61
+        PROD          69      69      .1      0.      0.      0.        
+$ Femap Property 70 : ROD_62
+        PROD          70      70      .1      0.      0.      0.        
+$ Femap Property 71 : ROD_63
+        PROD          71      71      .1      0.      0.      0.        
+$ Femap Material 1 : mat_1
+        MAT1           1                              0.      0.      0.        
+$ Femap Material 2 : mat_2
+        MAT1           2                              0.      0.      0.        
+$ Femap Material 3 : mat_3
+        MAT1           3                              0.      0.      0.        
+$ Femap Material 4 : mat_4
+        MAT1           4                              0.      0.      0.        
+$ Femap Material 5 : mat_5
+        MAT1           5                              0.      0.      0.        
+$ Femap Material 6 : mat_6
+        MAT1           6                              0.      0.      0.        
+$ Femap Material 7 : mat_7
+        MAT1           7                              0.      0.      0.        
+$ Femap Material 8 : mat_8
+        MAT1           8                              0.      0.      0.        
+$ Femap Material 9 : mat_9
+        MAT1           9                              0.      0.      0.        
+$ Femap Material 10 : mat_10
+        MAT1          10                              0.      0.      0.        
+$ Femap Material 11 : mat_11
+        MAT1          11                              0.      0.      0.        
+$ Femap Material 12 : mat_12
+        MAT1          12                              0.      0.      0.        
+$ Femap Material 13 : mat_13
+        MAT1          13                              0.      0.      0.        
+$ Femap Material 14 : mat_14
+        MAT1          14                              0.      0.      0.        
+$ Femap Material 15 : mat_15
+        MAT1          15                              0.      0.      0.        
+$ Femap Material 16 : mat_16
+        MAT1          16                              0.      0.      0.        
+$ Femap Material 17 : mat_17
+        MAT1          17                              0.      0.      0.        
+$ Femap Material 18 : mat_18
+        MAT1          18                              0.      0.      0.        
+$ Femap Material 19 : mat_19
+        MAT1          19                              0.      0.      0.        
+$ Femap Material 20 : mat_20
+        MAT1          20                              0.      0.      0.        
+$ Femap Material 21 : mat_21
+        MAT1          21                              0.      0.      0.        
+$ Femap Material 22 : mat_22
+        MAT1          22                              0.      0.      0.        
+$ Femap Material 23 : mat_23
+        MAT1          23                              0.      0.      0.        
+$ Femap Material 24 : mat_24
+        MAT1          24                              0.      0.      0.        
+$ Femap Material 25 : mat_25
+        MAT1          25                              0.      0.      0.        
+$ Femap Material 26 : mat_26
+        MAT1          26                              0.      0.      0.        
+$ Femap Material 27 : mat_27
+        MAT1          27                              0.      0.      0.        
+$ Femap Material 28 : mat_28
+        MAT1          28                              0.      0.      0.        
+$ Femap Material 29 : mat_29
+        MAT1          29                              0.      0.      0.        
+$ Femap Material 30 : mat_30
+        MAT1          30                              0.      0.      0.        
+$ Femap Material 31 : mat_31
+        MAT1          31                              0.      0.      0.        
+$ Femap Material 32 : mat_32
+        MAT1          32                              0.      0.      0.        
+$ Femap Material 33 : mat_33
+        MAT1          33                              0.      0.      0.        
+$ Femap Material 34 : mat_34
+        MAT1          34                              0.      0.      0.        
+$ Femap Material 35 : mat_35
+        MAT1          35                              0.      0.      0.        
+$ Femap Material 36 : mat_36
+        MAT1          36                              0.      0.      0.        
+$ Femap Material 37 : mat_37
+        MAT1          37                              0.      0.      0.        
+$ Femap Material 38 : mat_38
+        MAT1          38                              0.      0.      0.        
+$ Femap Material 39 : mat_39
+        MAT1          39                              0.      0.      0.        
+$ Femap Material 40 : mat_40
+        MAT1          40                              0.      0.      0.        
+$ Femap Material 41 : mat_41
+        MAT1          41                              0.      0.      0.        
+$ Femap Material 42 : mat_42
+        MAT1          42                              0.      0.      0.        
+$ Femap Material 43 : mat_43
+        MAT1          43                              0.      0.      0.        
+$ Femap Material 44 : mat_44
+        MAT1          44                              0.      0.      0.        
+$ Femap Material 45 : mat_45
+        MAT1          45                              0.      0.      0.        
+$ Femap Material 46 : mat_46
+        MAT1          46                              0.      0.      0.        
+$ Femap Material 47 : mat_47
+        MAT1          47                              0.      0.      0.        
+$ Femap Material 48 : mat_48
+        MAT1          48                              0.      0.      0.        
+$ Femap Material 49 : mat_49
+        MAT1          49                              0.      0.      0.        
+$ Femap Material 50 : mat_50
+        MAT1          50                              0.      0.      0.        
+$ Femap Material 51 : mat_51
+        MAT1          51                              0.      0.      0.        
+$ Femap Material 52 : mat_52
+        MAT1          52                              0.      0.      0.        
+$ Femap Material 53 : mat_53
+        MAT1          53                              0.      0.      0.        
+$ Femap Material 54 : mat_54
+        MAT1          54                              0.      0.      0.        
+$ Femap Material 55 : mat_55
+        MAT1          55                              0.      0.      0.        
+$ Femap Material 56 : mat_56
+        MAT1          56                              0.      0.      0.        
+$ Femap Material 57 : mat_57
+        MAT1          57                              0.      0.      0.        
+$ Femap Material 58 : mat_58
+        MAT1          58                              0.      0.      0.        
+$ Femap Material 59 : mat_59
+        MAT1          59                              0.      0.      0.        
+$ Femap Material 60 : mat_60
+        MAT1          60                              0.      0.      0.        
+$ Femap Material 61 : mat_61
+        MAT1          61                              0.      0.      0.        
+$ Femap Material 62 : mat_62
+        MAT1          62                              0.      0.      0.        
+$ Femap Material 63 : mat_63
+        MAT1          63                              0.      0.      0.        
+$ Femap Material 64 : mat_64
+        MAT1          64                              0.      0.      0.        
+$ Femap Material 65 : mat_65
+        MAT1          65                              0.      0.      0.        
+$ Femap Material 66 : mat_66
+        MAT1          66                              0.      0.      0.        
+$ Femap Material 67 : mat_67
+        MAT1          67                              0.      0.      0.        
+$ Femap Material 68 : mat_68
+        MAT1          68                              0.      0.      0.        
+$ Femap Material 69 : mat_69
+        MAT1          69                              0.      0.      0.        
+$ Femap Material 70 : mat_70
+        MAT1          70                              0.      0.      0.        
+$ Femap Material 71 : mat_71
+        MAT1          71                              0.      0.      0.        

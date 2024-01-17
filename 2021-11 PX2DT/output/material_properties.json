@@ -1,0 +1,54 @@
+[
+    {
+        "Identification": "Upper sand",
+        "SoilModel": "Mohr-Coulomb",
+        "Colour": "15262369",
+        "gammaUnsat": "17",
+        "gammaSat": "20",
+        "ERef": "13000",
+        "nu": "0.3",
+        "cRef": "1",
+        "phi": "31"
+    },
+    {
+        "Identification": "Clay",
+        "SoilModel": "Mohr-Coulomb",
+        "Colour": "10676870",
+        "gammaUnsat": "16",
+        "gammaSat": "18",
+        "ERef": "10000",
+        "nu": "0.35",
+        "cRef": "5",
+        "phi": "25"
+    },
+    {
+        "Identification": "Stiff sand",
+        "SoilModel": "Mohr-Coulomb",
+        "Colour": "10283244",
+        "gammaUnsat": "17",
+        "gammaSat": "20",
+        "ERef": "75000",
+        "nu": "0.3",
+        "cRef": "1",
+        "phi": "31"
+    },
+    {
+        "Identification": "Concrete",
+        "SoilModel": "Linear Elastic",
+        "DrainageType": "Non-porous",
+        "Colour": "16377283",
+        "nu": "0.1",
+        "ERef": "31000000",
+        "gammaUnsat": "27"
+    },
+    {
+        "Identification": "TBM",
+        "MaterialType": "Elastic",
+        "Colour": "16711680",
+        "Gamma": "247",
+        "Isotropic": "True",
+        "E1": "200000000",
+        "D3d": "0.17",
+        "G12": "100000000"
+    }
+]

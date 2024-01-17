@@ -1,0 +1,85 @@
+INIT MASTER(S)
+NASTRAN SYSTEM(442)=-1,SYSTEM(319)=1
+ID test1,FEMAP
+SOL SESTATIC
+CEND
+  TITLE = Simcenter Nastran Static Analysis Set
+  ECHO = NONE
+  DISPLACEMENT(PLOT) = ALL
+  SPCFORCE(PLOT) = ALL
+  OLOAD(PLOT) = ALL
+  FORCE(PLOT,CORNER) = ALL
+  STRESS(PLOT,CORNER) = ALL
+BEGIN BULK
+$ ***************************************************************************
+$   Written by : Femap
+$   Version    : 2021.2.0
+$   Translator : Simcenter Nastran
+$   From Model : D:\OneDrive\02_Arhiva razno\05_Skripte\2021-11 P2DT\dat struktura\test1.modfem
+$   Date       : Mon Mar 21 10:49:50 2022
+$   Output To  : D:\OneDrive\02_Arhiva razno\05_Skripte\2021-11 P2DT\dat struktura\
+$ ***************************************************************************
+$
+PARAM,PRGPST,NO
+PARAM,POST,-1
+PARAM,OGEOM,NO
+PARAM,AUTOSPC,YES
+PARAM,K6ROT,100.
+PARAM,GRDPNT,0
+CORD2C         1       0      0.      0.      0.      0.      0.      1.+FEMAPC1
++FEMAPC1      1.      0.      1.        
+CORD2S         2       0      0.      0.      0.      0.      0.      1.+FEMAPC2
++FEMAPC2      1.      0.      1.        
+$ Femap Property 101 : mprop1
+PSOLID       101      51       0        
+$ Femap Property 102 : mprop2
+PSOLID       102      52       0        
+$ Femap Property 103 : stap
+PROD         103      52      .1      0.      0.      0.
+$ Femap Material 51 : mmat1
+MAT1          51                              0.      0.      0.        
+$ Femap Material 52 : mmat2
+MAT1          52                              0.      0.      0.        
+$ Femap Material 53 : Copy of mmat2
+MAT1          53                              0.      0.      0.        
+GRID         190       0     -.5     -.5      1.       0
+GRID         191       0      .5     -.5      1.       0
+GRID         192       0      .5      .5      1.       0
+GRID         193       0     -.5      .5      1.       0
+GRID         194       0      .5     -.5      0.       0
+GRID         195       0     -.5     -.5      0.       0
+GRID         196       0     -.5      .5      0.       0
+GRID         197       0      .5      .5      0.       0
+GRID         198       0      0.     -.5      1.       0
+GRID         199       0      0.      0.      1.       0
+GRID         200       0     -.5      0.      1.       0
+GRID         201       0      .5      0.      1.       0
+GRID         202       0      0.      .5      1.       0
+GRID         203       0      .5     -.5      .5       0
+GRID         204       0      0.     -.5      .5       0
+GRID         205       0      0.     -.5      0.       0
+GRID         206       0     -.5     -.5      .5       0
+GRID         207       0     -.5      0.      .5       0
+GRID         208       0     -.5      0.      0.       0
+GRID         209       0     -.5      .5      .5       0
+GRID         210       0      0.      .5      .5       0
+GRID         211       0      0.      .5      0.       0
+GRID         212       0      .5      .5      .5       0
+GRID         213       0      .5      0.      0.       0
+GRID         214       0      0.      0.      0.       0
+GRID         215       0      .5      0.      .5       0
+GRID         216       0      0.      0.      .5       0
+CTETRA       157     102     191     193     192     197     199     202+       
++            201     215     210     212
+CTETRA       158     101     191     196     193     197     216     209+       
++            199     215     211     210
+CTETRA       159     101     190     193     191     196     200     199+       
++            198     207     209     216
+CTETRA       160     101     191     194     195     196     203     205+       
++            204     216     214     208
+CTETRA       161     101     191     194     196     197     203     214+       
++            216     215     213     211
+CTETRA       162     101     190     191     195     196     198     204+       
++            206     207     216     208
+CROD         166     103     190     193
+ENDDATA 13c80146
