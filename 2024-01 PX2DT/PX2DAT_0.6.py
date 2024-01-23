@@ -7,18 +7,23 @@ verzija 0.6
 import os
 import logging
 import json
-from typing import Optional
+from typing import Optional, List
 
 from data import blokovi
+from plaxis_parser import mat_prop
 
 
 dirname = os.path.dirname(__file__)  # file directory path
 
-# config file with
+
 class Config:
-    def __init__(self, config_file):
+    def __init__(self, config_file: str):
+        self.settings = self.load_config(config_file)
+
+    @staticmethod
+    def load_config(config_file: str) -> dict:
         with open(config_file, "r") as file:
-            self.settings = json.load(file)
+            return json.load(file)
 
 
 config = Config(os.path.join(dirname, "config.json"))
@@ -36,10 +41,16 @@ logger = logging.getLogger(__name__)  # pravljenje instance loggera
 
 izlaz_dat = os.path.join(dirname, naziv_izlaznog_fajla)
 
-try:
-    os.remove(izlaz_dat)
-except OSError:
-    pass
+
+def remove_file_if_exists(file_path: str, naziv: str):
+    try:
+        os.remove(file_path)
+    except OSError:
+        logger.warning(f"File {naziv} not found for removal.")
+
+
+remove_file_if_exists(izlaz_dat, naziv_izlaznog_fajla)
+
 
 improoutput = os.path.join(dirname, f"data/{naziv_ulaznog_fajla}")
 p3dlog_data = os.path.join(dirname, "data/datasuccess.p3dlog")
@@ -283,33 +294,7 @@ for linija, sadrzaj in enumerate(p3dlog):
                 # logger.debug(f": linija {linija}:>>>{sadrzaj}")
 
 
-lista_prop = []
-lista_mat = []
-
-
-# zapisivanje materijala i propertija 3D elemenata
-for linija_3d, sadrzaj_V in enumerate(lista_V):
-    lista_prop.append(
-        f"$ Femap Property {str(linija_3d+1)}: SOLID_{str(linija_3d+1)}\n\
-        PSOLID{str(linija_3d+1):>10}{str(linija_3d+1):>8}       0        \n"
-    )
-    lista_mat.append(
-        f"$ Femap Material {str(linija_3d+1)} : mat_{str(linija_3d+1)}\n\
-        MAT1{str(linija_3d+1):>12}                              0.      0.      0.        \n"
-    )
-
-
-# zapisivanje materijala i propertija 1D elemenata
-for linija_1d, sadrzaj_C in enumerate(lista_C):
-    sledeci_id_1d = len(lista_V) + linija_1d + 1
-    lista_prop.append(
-        f"$ Femap Property {str(sledeci_id_1d)} : ROD_{str(linija_1d+1)}\n\
-        PROD{str(sledeci_id_1d):>12}{str(sledeci_id_1d):>8}      .1      0.      0.      0.        \n"
-    )
-    lista_mat.append(
-        f"$ Femap Material {str(sledeci_id_1d)} : mat_{str(sledeci_id_1d)}\n\
-        MAT1{str(sledeci_id_1d):>12}                              0.      0.      0.        \n"
-    )
+lista_prop, lista_mat = mat_prop.mat_prop_list(lista_V, lista_C)
 
 
 # zapisivanje u datoteku
