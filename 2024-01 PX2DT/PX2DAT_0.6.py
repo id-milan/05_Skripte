@@ -1,24 +1,18 @@
 """
 translator iz Plaxis-a u Femapov neu fajl
-date 2022-03-21
-verzija 0.4
-
-dodato:
-- kreiranje odgovarajucih materijala i propertija bez podataka
-- zapisivanje elemenata
-    - CTETRA
-    - CROD
+date 2024-01-23
+verzija 0.6
 """
-
 
 import os
 import logging
-from data import blokovi
 import json
 from typing import Optional
 
-dirname = os.path.dirname(__file__)  # file directory path
+from data import blokovi
 
+
+dirname = os.path.dirname(__file__)  # file directory path
 
 # config file with
 class Config:
@@ -250,13 +244,13 @@ for linija, sadrzaj in enumerate(px_out):
     # grupisanje ulaznog fajla u blokove
     match prvi_clan:
         case "P":  # cvorovi
-            lista_cvor.append(s_reda)
+            lista_cvor.append(format_cvora(s_reda))
         case "LE":  # linijski elementi
-            lista_CROD.append(s_reda)
+            lista_CROD.append(format_CROD(s_reda))
         case "SE":  # povrsinski elementi
-            lista_CTRIA6.append(s_reda)
+            lista_CTRIA6.append(format_CTRIA6(s_reda))
         case "VE":  # zapreminski elementi
-            lista_CTETRA.append(s_reda)
+            lista_CTETRA.append(format_CTETRA(s_reda))
         case "C":
             pass
         case "V":
